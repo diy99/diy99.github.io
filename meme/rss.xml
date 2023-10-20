@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>DIY 99</title>
+        <link>https://diy99.github.io/meme/</link>
+        <description>分享電腦使用經驗</description>
+        <generator>Hugo 0.118.2 https://gohugo.io/</generator>
+        
+            <language>zh-TW</language>
+        
+        
+            <managingEditor>reuixiy@gmail.com (Chuan Jang)</managingEditor>
+        
+        
+            <webMaster>reuixiy@gmail.com (Chuan Jang)</webMaster>
+        
+        
+            <copyright>非營利情況下都可以引用或轉載本站文章，不過請註明出處！😉</copyright>
+        
+        <lastBuildDate>Sat, 21 Oct 2023 06:01:08 &#43;0800</lastBuildDate>
+        
+            <atom:link rel="self" type="application/rss&#43;xml" href="https://diy99.github.io/meme/rss.xml" />
+        
+        
+            <item>
+                <title>Git Bash</title>
+                <link>https://diy99.github.io/meme/posts/git-bash/</link>
+                <guid isPermaLink="true">https://diy99.github.io/meme/posts/git-bash/</guid>
+                <pubDate>Sun, 01 Oct 2023 15:23:04 &#43;0800</pubDate>
+                
+                    <author>reuixiy@gmail.com (Chuan Jang)</author>
+                
+                <copyright>非營利情況下都可以引用或轉載本站文章，不過請註明出處！😉</copyright>
+                
+                    <description>&lt;p&gt;Git for Windows 提供源自Linux/Unix 指令操作Window 檔案系統，更可以將&lt;a href=&#34;https://zh.wikipedia.org/zh-tw/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1#%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5&#34; class=&#34;active&#34;&gt;靜態網頁&lt;/a&gt; Push &lt;a href=&#34;https://ithelp.ithome.com.tw/articles/10246099&#34; class=&#34;active&#34;&gt;上傳到 GitHub&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;myborder&#34; class=&#34;border-bottom&#34;&gt;安裝&lt;/h2&gt;
+&lt;i class=&#34;fa fa-thumb-tack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; 建立&lt;a href=&#34;https://diy99.github.io/meme/meme/posts/app-folder/&#34; class=&#34;active&#34;&gt;D:\App資料夾&lt;/a&gt;(&lt;span class=&#34;choice&#34;&gt;選擇性&lt;/span&gt;)
+&lt;p&gt;&lt;i class=&#34;fa fa-thumb-tack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; 前往 &lt;a href=&#34;https://git-scm.com/download/win&#34; class=&#34;active&#34;&gt;Git - Downloading Packag&lt;/a&gt; ，按 &lt;span class=&#34;active&#34;&gt;64-bit Git for Windows Portable&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i class=&#34;fa fa-thumb-tack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; 開啟 PortableGit-2.42.0.2-64-bit.7z.exe (我下載時的版本，這是以&lt;a href=&#34;https://www.developershome.com/7-zip/&#34; class=&#34;active&#34;&gt;7-Zip&lt;/a&gt;打包的可執行檔)，安裝的資料夾改為 D:\App\PortableGit ➜ 按 [OK]
+&lt;img src=&#34;https://diii.neocities.org/img/git01.webp&#34; alt=&#34;&#34;&gt;
+&lt;i class=&#34;fa fa-thumb-tack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; 複製D:\App\PortableGit\內的git-bash.exe，至上一層D:\App，貼上捷徑&lt;/p&gt;
+&lt;p&gt;&lt;i class=&#34;fa fa-thumb-tack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; 開啟 git-bash 作底下設置
+&lt;br&gt;&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 按滑鼠右鍵
+&lt;img src=&#34;https://diii.neocities.org/img/git01a.webp&#34; alt=&#34;&#34;&gt;
+&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 按 [Window] ➜ UI language  選取 [zh_TW] ➜ 按 [Apply] ➜ 按 [Save]
+&lt;br&gt;&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 輸入 echo $PATH (&lt;i class=&#34;fa-solid fa-arrow-left&#34;  style=&#34;color:#e55;&#34;&gt;&lt;/i&gt; 可複製再貼至git-bash)，git-bash的 &lt;span class=&#34;colorred&#34;&gt;複製、貼上&lt;/span&gt; 快速鍵分別為 &lt;span class=&#34;colorred&#34;&gt;Ctrl+Ins、Shift+Ins&lt;/span&gt;。
+&lt;img src=&#34;https://diii.neocities.org/img/git02.webp&#34; alt=&#34;&#34;&gt;
+&lt;i class=&#34;fa fa-thumb-tack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; 安裝&lt;span class=&#34;colorred&#34;&gt;wget&lt;/span&gt; 與測試
+&lt;br&gt;&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 前往&lt;a href=&#34;https://eternallybored.org/misc/wget/&#34; class=&#34;active&#34;&gt;GNU Wget&lt;/a&gt;下載 x64  &lt;span class=&#34;active&#34;&gt;EXE&lt;/span&gt;
+&lt;br&gt;&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 由 echo $PATH 得知將 wget.exe  移至  D:\App\PortableGit\usr\bin\  內，
+&lt;br&gt;&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 於 git-bash 貼上 &lt;code&gt;wget https://diii.neocities.org/img/git02.webp&lt;/code&gt;下載上一張圖片做測試。&lt;/p&gt;
+&lt;p&gt;&lt;i class=&#34;fa fa-thumb-tack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; git-bash 的 &lt;a href=&#34;https://zh.wikipedia.org/wiki/Bash&#34; class=&#34;active&#34;&gt;Bash&lt;/a&gt; 就是能從檔案中讀取命令並執行，而這檔案稱為shell script。將底下 shell script 以原始碼編輯器(如&lt;a href=&#34;https://diy99.github.io/meme/meme/posts/notepad++/&#34; class=&#34;active&#34;&gt;Notepad++&lt;/a&gt;)存至 D:\App\PortableGit\hello.sh，於git-bash 貼上 &lt;code&gt;sh hello.sh&lt;/code&gt;  執行(&lt;span class=&#34;colorred&#34;&gt;註:&lt;/span&gt; Windows 不需 &lt;code&gt;chmod +x hello.sh&lt;/code&gt;)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#!/bin/bash
+Reset=$(tput sgr0)
+Blue=$(tput setaf 4)
+
+echo -e &amp;#34;Hello ${Blue}World${Reset}!&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://diii.neocities.org/img/git03.webp&#34; alt=&#34;&#34;&gt;
+&lt;i class=&#34;fa fa-thumb-tack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; &lt;span class=&#34;anchorcolor&#34;&gt;如同&lt;/span&gt;&lt;a href=&#34;https://diy99.github.io/meme/meme/posts/app-folder/#cmd-folder&#34; class=&#34;active&#34;&gt;cmd快速進入中文資料夾&lt;/a&gt;，於 git-bash 貼上 &lt;code&gt;cd &amp;quot;D:\相簿\登山&amp;quot;&lt;/code&gt;
+&lt;img src=&#34;https://diii.neocities.org/img/git04.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;myborder&#34; class=&#34;border-bottom-aaa&#34;&gt;GitHub &lt;span  id=&#34;ssh&#34;&gt;&lt;a href=&#34;https://diy99.github.io/meme/posts/git-bash/#ssh&#34;&gt;&lt;/a&gt;SSH&lt;/span&gt; 連線&lt;/h3&gt;
+如果檔案不上傳至 GitHub，以下操作可不作😁。
+&lt;p&gt;&lt;i class=&#34;fa fa-thumb-tack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; 前往 &lt;a href=&#34;https://github.com/signup&#34; class=&#34;active&#34;&gt;GitHub&lt;/a&gt; 註冊，連線有 SSH 與 HTTPS 兩種，底下只說明 SSH 方法，更多資訊可參閱&lt;a href=&#34;https://io-oi.me/tech/ssh-with-multiple-github-accounts/&#34; class=&#34;active&#34;&gt;使用 SSH 连接到 GitHub&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;i class=&#34;fa fa-thumb-tack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; 設置使用者的 Email 及使用者名稱，可再參閱&lt;a href=&#34;https://gitbook.tw/chapters/config/user-config&#34; class=&#34;active&#34;&gt;使用者設定&lt;/a&gt;
+&lt;br&gt;&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 於 git-bash 貼上&lt;code&gt;git config --global user.email &amp;quot;you@example.com&amp;quot;&lt;/code&gt; ，you@example.com 改為你的。
+&lt;br&gt;&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 於 git-bash 貼上&lt;code&gt;git config --global user.name &amp;quot;Your Name&amp;quot;&lt;/code&gt; ，Your Name 改為你的。&lt;/p&gt;
+&lt;p&gt;&lt;i class=&#34;fa fa-thumb-tack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; 生成 SSH 公鑰匙和私鑰匙
+&lt;br&gt;&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 於 git-bash 貼上 &lt;code&gt;ssh-keygen&lt;/code&gt;，會在 C:\Users\&lt;span class=&#34;choice&#34;&gt;your_name&lt;/span&gt;\.ssh 資料夾裡生成 id_rsa, id_rsa.pub 兩個檔案。id_rsa.pub是公開金鑰，id_rsa是私密金鑰。
+&lt;br&gt;&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 於 git-bash 貼上 &lt;code&gt;cat ~/.ssh/id_rsa.pub&lt;/code&gt; 顯示剛剛建立的公鑰，並且&lt;span class=&#34;colorred&#34;&gt;複製&lt;/span&gt;。
+&lt;br&gt;&lt;span class=&#34;colorred&#34;&gt;PS:&lt;/span&gt; id_rsa.pub 也可以使用&lt;a href=&#34;https://diy99.github.io/meme/meme/posts/notepad++/&#34; class=&#34;active&#34;&gt;Notepad++&lt;/a&gt;開啟。
+&lt;img src=&#34;https://diii.neocities.org/img/ssh1.webp&#34; alt=&#34;&#34;&gt;
+&lt;i class=&#34;fa fa-thumb-tack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; 將 公鑰 貼到 &lt;a href=&#34;https://github.com/settings/keys&#34; class=&#34;active&#34;&gt;GitHub SSH keys&lt;/a&gt;
+&lt;br&gt;&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 按 &lt;span class=&#34;rounded&#34;&gt;New SSH key&lt;/span&gt; ➜ 於 Key 欄位 &lt;span class=&#34;colorred&#34;&gt;貼上&lt;/span&gt; ➜ 按 &lt;span class=&#34;rounded&#34;&gt; Add SSH key&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i class=&#34;fa fa-thumb-tack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; 測試 GitHub SSH 連線
+&lt;br&gt;&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 於 git-bash 貼上 &lt;code&gt;ssh -T git@github.com&lt;/code&gt;，過程如下：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Are you sure you want to continue connecting (yes/no/[fingerprint])?&lt;/code&gt;
+&lt;br&gt;&lt;span class=&#34;choice&#34;&gt;輸入&lt;/span&gt; yes&lt;br&gt;
+&lt;code&gt;Warning: Permanently added &#39;github.com&#39; (ED25519) to the list of known hosts. Hi diy99! You&#39;ve successfully authenticated, but GitHub does not provide shell access.&lt;/code&gt;&lt;/p&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://diy99.github.io/meme/tags/git-bash/">Git Bash</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>Notepad&#43;&#43;</title>
+                <link>https://diy99.github.io/meme/posts/notepad&#43;&#43;/</link>
+                <guid isPermaLink="true">https://diy99.github.io/meme/posts/notepad&#43;&#43;/</guid>
+                <pubDate>Fri, 22 Sep 2023 21:30:00 &#43;0800</pubDate>
+                
+                    <author>reuixiy@gmail.com (Chuan Jang)</author>
+                
+                <copyright>非營利情況下都可以引用或轉載本站文章，不過請註明出處！😉</copyright>
+                
+                    <description>&lt;p&gt;工欲善其事，必先利其器。🙂雜七雜八的記事與🙃寫程式免不了使用原始碼編輯器(source code editor)，我已習慣Notepad++，&lt;a href=&#34;https://code.visualstudio.com/&#34; class=&#34;active&#34;&gt;Visual Studio Code&lt;/a&gt;也很好用。cmd命令可輕鬆於Notepad++編輯，再貼至&lt;a href=&#34;https://diy99.github.io/meme/meme/posts/app-folder/#cmd&#34; class=&#34;active&#34;&gt;cmd視窗&lt;/a&gt;執行。更可編輯Git Bash命令，再貼至Git Bash視窗執行。&lt;/p&gt;
+&lt;h2 id=&#34;myborder&#34; class=&#34;border-bottom&#34;&gt;安裝與設置&lt;/h2&gt;
+&lt;i class=&#34;fa fa-thumb-tack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; 建立&lt;a href=&#34;https://diy99.github.io/meme/meme/posts/app-folder/&#34; class=&#34;active&#34;&gt;D:\App資料夾&lt;/a&gt;
+&lt;p&gt;&lt;i class=&#34;fa fa-thumb-tack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; 前往&lt;a href=&#34;https://notepad-plus-plus.org/downloads/&#34; class=&#34;active&#34;&gt;Notepad++&lt;/a&gt; 選取您要的版本，選取 64-bit x64 之Portable (zip) ，我下載時為npp.8.5.6.portable.x64.zip。解壓縮至D:\App\Notepad++(&lt;i class=&#34;fa fa-arrow-left&#34; style=&#34;color:#e55;&#34;&gt;&lt;/i&gt; 可複製)
+&lt;br&gt;&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 按 &lt;span style=&#34;border:2px #1E90FF solid; padding: 0 8px 0 8px;&#34;&gt;解壓縮(E)&lt;/span&gt;
+&lt;img src=&#34;https://diii.neocities.org/img/npp1.webp&#34; alt=&#34;&#34;&gt;
+&lt;i class=&#34;fa fa-thumb-tack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; 於D:\App資料夾增加&lt;span  id=&#34;shortcut&#34; class=&#34;colorred&#34;&gt;&lt;a href=&#34;https://diy99.github.io/meme/posts/notepad++/#shortcut&#34;&gt;&lt;/a&gt;Notepad++捷徑&lt;/span&gt;
+&lt;br&gt;&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 以檔案總管複製D:\App\Notepad++\內的notepad++.exe，至上一層D:\App，按滑鼠右鍵，貼上捷徑(S)
+&lt;img src=&#34;https://diii.neocities.org/img/npp2.webp&#34; alt=&#34;&#34;&gt;
+&lt;i class=&#34;fa fa-thumb-tack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; &lt;span id=&#34;open&#34;&gt;&lt;a href=&#34;https://diy99.github.io/meme/posts/notepad++/#open&#34; class=&#34;anchor-link&#34;&gt;&lt;/a&gt;開啟Notepad++與設置&lt;/span&gt;
+&lt;br&gt;&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 滑鼠選取notepad++ - 捷徑，按  Enter。
+&lt;br&gt;&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 按 [Settings] ➜ 按 [Preferences] ➜ Localization 選取 [台灣繁體] ➜ 按 [儲存並關閉]
+&lt;img src=&#34;https://diii.neocities.org/img/npp3.webp&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt;  按 [外掛] ➜ 按 [管理外掛模組] ➜ 勾選 [Explorer]
+&lt;br&gt;&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt;  按右上角 [安裝] ➜ 按 [是]
+&lt;br&gt;&lt;i class=&#34;fa fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt;  按 [外掛] ➜ [Explorer] ➜ 按 [Explorer]
+&lt;img src=&#34;https://diii.neocities.org/img/npp4.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;myborder&#34; class=&#34;border-bottom-aaa&#34;&gt;編輯區字型與字體&lt;/h3&gt; 
+&lt;p&gt;&lt;img src=&#34;https://diii.neocities.org/img/npp5.webp&#34; alt=&#34;&#34;&gt;
+&lt;i class=&#34;fa fa-thumb-tack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; 按 [設定] ➜ 按 [語法配置樣式器...] ➜ 樣式:  選取 Default Stlye ➜ 字型名稱 (選取你要的) ➜ 字型大小 (選取你要的) ➜  按 [儲存並關閉]&lt;/p&gt;
+&lt;!--
+取消網址連結
+設定  ➜  偏好設定  ➜  雲端連結➜  取消勾選  [將連結設為可點擊] ➜  按 [儲存並關閉]
+--&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://diy99.github.io/meme/tags/%E5%8E%9F%E5%A7%8B%E7%A2%BC%E7%B7%A8%E8%BC%AF%E5%99%A8/"> 原始碼編輯器</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>APP Folder</title>
+                <link>https://diy99.github.io/meme/posts/app-folder/</link>
+                <guid isPermaLink="true">https://diy99.github.io/meme/posts/app-folder/</guid>
+                <pubDate>Wed, 20 Sep 2023 15:48:06 &#43;0800</pubDate>
+                
+                    <author>reuixiy@gmail.com (Chuan Jang)</author>
+                
+                <copyright>非營利情況下都可以引用或轉載本站文章，不過請註明出處！😉</copyright>
+                
+                    <description>&lt;p&gt;&lt;img src=&#34;https://diii.neocities.org/img/appfolder.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i class=&#34;fa-solid fa-thumbtack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; 建立D:\App資料夾，沒有D槽可參閱 &lt;a href=&#34;https://diy99.github.io/meme/meme/posts/minitool-partition-wizard/&#34; class=&#34;active&#34;&gt;硬碟分割與調整&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;i class=&#34;fa-solid fa-thumbtack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; 以檔案總管將D:\App&lt;a href=&#34;https://today.line.me/tw/v2/article/1qON7z&#34; class=&#34;active&#34;&gt;釘選到 [快速存取]&lt;/a&gt;，或在桌面建立D:\App資料夾捷徑。&lt;/p&gt;
+&lt;p&gt;&lt;i class=&#34;fa-solid fa-thumbtack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; &lt;span  id=&#34;shortcut&#34;  class=&#34;colorred&#34;&gt;&lt;a href=&#34;https://diy99.github.io/meme/posts/app-folder/#shortcut&#34;&gt;&lt;/a&gt;建立cmd捷徑 &lt;/span&gt;
+&lt;br&gt;&lt;i class=&#34;fa-solid fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 於D:\App新增捷徑，複製  C:\Windows\System32\cmd.exe  至  [輸入項目的位置] ➜ 按 [下一步] ➜ 按 [完成]
+&lt;br&gt;&lt;i class=&#34;fa-solid fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 選取 cmd，按滑鼠右鍵，按[內容(R)]，於[開始位置(S)]輸入 D:\，按 [確定]。
+&lt;img src=&#34;https://diii.neocities.org/img/cmd1.webp&#34; alt=&#34;&#34;&gt;
+&lt;i class=&#34;fa-solid fa-thumbtack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; &lt;span  id=&#34;cmd&#34; class=&#34;colorred&#34;&gt;&lt;a href=&#34;https://diy99.github.io/meme/posts/app-folder/#cmd&#34;&gt;&lt;/a&gt;開啟cmd&lt;/span&gt;
+&lt;br&gt;&lt;i class=&#34;fa-solid fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; 滑鼠選取 cmd，按  Enter💯(也可以滑鼠左鍵連按兩下 &lt;i class=&#34;fa-solid fa-arrow-left&#34;  style=&#34;color:#e55;&#34;&gt;&lt;/i&gt; 這種操作不太好)，爾後就很容易至D:\App快速開啟cmd。
+&lt;img src=&#34;https://diii.neocities.org/img/cmd2.webp&#34; alt=&#34;&#34;&gt;
+&lt;i class=&#34;fa-solid fa-thumbtack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; &lt;span id=&#34;cmd-folder&#34;  class=&#34;colorred&#34;&gt;&lt;a href=&#34;https://diy99.github.io/meme/posts/app-folder/#cmd-folder&#34;  &gt;&lt;/a&gt;cmd快速進入中文資料夾&lt;/span&gt;
+&lt;br&gt;&lt;i class=&#34;fa-solid fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt;  例如檔案總管建立 D:\相簿\登山 資料夾，按 網址列，按 Ctrl+C 複製
+&lt;img src=&#34;https://diii.neocities.org/img/cmd3.webp&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;&lt;i class=&#34;fa-solid fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt;  貼至 原始碼編輯器(如&lt;a href=&#34;https://diy99.github.io/meme/meme/posts/notepad++/&#34; class=&#34;active&#34;&gt;Notepad++&lt;/a&gt;) ，編輯為 cd &amp;quot;D:\相簿\登山&amp;quot;&lt;img src=&#34;https://diii.neocities.org/img/cmd4.webp&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;&lt;i class=&#34;fa-solid fa-bullhorn&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt;  自Notepad++複製 cd &amp;quot;D:\相簿\登山&amp;quot;，貼至cmd，按 Enter。
+&lt;img src=&#34;https://diii.neocities.org/img/cmd5.webp&#34; alt=&#34;&#34;&gt;
+&lt;i class=&#34;fa-solid fa-thumbtack&#34; style=&#34;color:#FF3300;&#34;&gt;&lt;/i&gt; &lt;span class=&#34;colorred&#34;&gt;Linux終端(terminal)也可以快速進入目錄&lt;/span&gt;，下圖 Arch Linux LXQt桌面
+&lt;img src=&#34;https://diii.neocities.org/img/QTerminal.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://diy99.github.io/meme/tags/cmd%E6%8D%B7%E5%BE%91/">cmd捷徑</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>MiniTool Partition Wizard</title>
+                <link>https://diy99.github.io/meme/posts/minitool-partition-wizard/</link>
+                <guid isPermaLink="true">https://diy99.github.io/meme/posts/minitool-partition-wizard/</guid>
+                <pubDate>Mon, 18 Sep 2023 06:33:40 &#43;0800</pubDate>
+                
+                    <author>reuixiy@gmail.com (Chuan Jang)</author>
+                
+                <copyright>非營利情況下都可以引用或轉載本站文章，不過請註明出處！😉</copyright>
+                
+                    <description>&lt;h2 id=&#34;myborder&#34; class=&#34;border-bottom&#34;&gt;MiniTool Partition Wizard&lt;/h2&gt;
+&lt;p&gt;一般而言，安裝Windows時，就只有C槽。MiniTool Partition Wizard能將硬碟分割，增加D槽以存放可攜式(portable,又稱免安裝)程式及資料，也可以將硬碟MBR轉換為GPT並保留所有檔案，我的Windows系統只分配60G。安裝Windows、Arch Linux雙系統，也要使用硬碟分割軟體。&lt;/p&gt;
+&lt;p&gt;&lt;i class=&#34;fa-solid fa-download&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.minitool.com/partition-manager/partition-wizard-home.html&#34; class=&#34;active&#34;&gt;下載MiniTool® Partition Wizard Free&lt;/a&gt;
+&lt;br&gt;&lt;i class=&#34;fa-solid fa-book&#34; style=&#34;color:#606060;&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.kocpc.com.tw/archives/441203&#34; class=&#34;active&#34;&gt;MiniTool Partition Wizard 教學&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;myborder&#34; class=&#34;border-bottom&#34;&gt;硬碟分割與調整的軟體彙整&lt;/h2&gt;
+&lt;h3 id=&#34;myborder&#34; class=&#34;border-bottom-aaa&#34;&gt;✨ IM-Magic Partition Resizer&lt;/h3&gt;
+&lt;p&gt;💡 &lt;a href=&#34;https://www.resize-c.com/&#34; class=&#34;active&#34;&gt;IM-Magic Partition Resizer  官網&lt;/a&gt;
+&lt;br&gt;&lt;i class=&#34;fa-solid fa-download&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://download.resize-c.com/resizer-free.zip&#34; class=&#34;active&#34;&gt;下載IM-Magic Partition Resizer Free(portable)&lt;/a&gt;，含中文版。&lt;/p&gt;
+&lt;h3 id=&#34;myborder&#34; class=&#34;border-bottom-aaa&#34;&gt;✨ AOMEI Partition Assistant&lt;/h3&gt;
+&lt;p&gt;&lt;i class=&#34;fa-solid fa-download&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.diskpart.com/download-home.html#demo&#34; class=&#34;active&#34;&gt;下載AOMEI Partition Assistant&lt;/a&gt;
+&lt;br&gt;&lt;i class=&#34;fa-solid fa-book&#34; style=&#34;color:#606060;&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://briian.com/17197/&#34; class=&#34;active&#34;&gt;AOMEI Partition Assistant教學&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;myborder&#34; class=&#34;border-bottom-aaa&#34;&gt;✨ GParted&lt;/h3&gt;
+&lt;p&gt;&lt;i class=&#34;fa-solid fa-download&#34; style=&#34;color:#008000;&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://gparted.org/download.php&#34; class=&#34;active&#34;&gt;下載GParted&lt;/a&gt;
+&lt;br&gt;&lt;i class=&#34;fa-solid fa-book&#34; style=&#34;color:#606060;&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://briian.com/34187/&#34; class=&#34;active&#34;&gt;GParted教學&lt;/a&gt;&lt;/p&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://diy99.github.io/meme/tags/%E7%A1%AC%E7%A2%9F%E5%88%86%E5%89%B2%E8%88%87%E8%AA%BF%E6%95%B4/">硬碟分割與調整</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+    </channel>
+</rss>
