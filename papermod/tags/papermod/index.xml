@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 16 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diy99.github.io/papermod/tags/papermod/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diy99.github.io/papermod/tags/papermod/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>📌 Hugo PaperMod 與 GitHub Pages</title>
       <link>https://diy99.github.io/papermod/posts/hugo-papermod/</link>
@@ -19,6 +19,15 @@
       
       <guid>https://diy99.github.io/papermod/posts/hugo-papermod/</guid>
       <description>Hugo特色 Hugo 是用 Go 編寫的靜態網站生成器，一般只需幾秒鐘就能生成一個網站，被稱為「世界上最快的網站構建框架」，也使 Hugo 大受歡迎，成為最熱門的靜</description>
+    </item>
+    
+    <item>
+      <title>PaperMod 選單</title>
+      <link>https://diy99.github.io/papermod/posts/papermod-menu/</link>
+      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/papermod-menu/</guid>
+      <description>&amp;nbsp;啟動 hugo server -D，邊閱讀本頁邊檢視 localhost:1313 &amp;nbsp;選單是Hugo所有主題(theme)的重頭戲，更多資訊可參閱 Hugo 官網 Menus | Hugo &amp;nbsp;</description>
     </item>
     
   </channel>
