@@ -11,14 +11,23 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 22 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diy99.github.io/papermod/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diy99.github.io/papermod/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>📌 Hugo PaperMod 與 GitHub Pages</title>
       <link>https://diy99.github.io/papermod/posts/hugo-papermod/</link>
       <pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diy99.github.io/papermod/posts/hugo-papermod/</guid>
-      <description>Hugo特色 Hugo 是用 Go 編寫的靜態網站生成器，一般只需幾秒鐘就能生成一個網站，被稱為「世界上最快的網站構建框架」，也使 Hugo 大受歡迎，成為最熱門的靜</description>
+      <description>本文更新日期: 2023-10-25 Hugo特色 Hugo 是用 Go 編寫的靜態網站生成器，一般只需幾秒鐘就能生成一個網站，被稱為「世界上最快的網站構建框架」，也使 Hugo 大受歡迎</description>
+    </item>
+    
+    <item>
+      <title>PaperMod Markdown</title>
+      <link>https://diy99.github.io/papermod/posts/papermod-markdown/</link>
+      <pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/papermod-markdown/</guid>
+      <description>Hugo 與 Markdown Markdown 是一種輕量級標記式語言，具易讀易寫特性，並且對於圖片，圖表、數學式都有支援，目前許多網站都廣泛使用Markdown來撰寫說明文件或是</description>
     </item>
     
     <item>
@@ -27,7 +36,7 @@
       <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diy99.github.io/papermod/posts/papermod-menu/</guid>
-      <description>&amp;nbsp;啟動 hugo server -D，邊閱讀本頁邊檢視 localhost:1313 &amp;nbsp;選單是Hugo所有主題(theme)的重頭戲，更多資訊可參閱 Hugo 官網 Menus | Hugo &amp;nbsp;</description>
+      <description>啟動 hugo server -D，邊閱讀本頁邊檢視 localhost:1313 選單是Hugo所有主題(theme)的重頭戲，更多資訊可參閱 Hugo 官網 Menus | Hugo 在 \content (省略了D:\MyData\bl</description>
     </item>
     
     <item>
@@ -54,7 +63,7 @@
       <pubDate>Wed, 20 Sep 2023 19:59:36 +0800</pubDate>
       
       <guid>https://diy99.github.io/papermod/posts/app-folder/</guid>
-      <description>建立D:\App資料夾 &amp;nbsp;建立 D:\App資料夾 存放應用程式(application program，簡寫為APP)與捷徑，沒有D槽可</description>
+      <description>建立D:\App資料夾 建立 D:\App資料夾 存放應用程式(application program，簡寫為APP)與捷徑，沒有D槽可參閱硬碟分割</description>
     </item>
     
     <item>

@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>PaperMod 選單 | DIY 99</title>
 <meta name="keywords" content="PaperMod">
-<meta name="description" content="&nbsp;啟動 hugo server -D，邊閱讀本頁邊檢視 localhost:1313 &nbsp;選單是Hugo所有主題(theme)的重頭戲，更多資訊可參閱 Hugo 官網 Menus | Hugo &nbsp;">
+<meta name="description" content="啟動 hugo server -D，邊閱讀本頁邊檢視 localhost:1313 選單是Hugo所有主題(theme)的重頭戲，更多資訊可參閱 Hugo 官網 Menus | Hugo 在 \content (省略了D:\MyData\bl">
 <meta name="author" content="
 📝&nbsp;Jang">
 <link rel="canonical" href="https://diy99.github.io/papermod/posts/papermod-menu/">
@@ -59,7 +59,7 @@
     </style>
 </noscript><link href="https://fonts.googleapis.com/css2?family=Oswald&family=Noto+Sans+TC&family=Noto+Sans+SC&family=Noto+Serif+TC:wght@500;700&family=Noto+Serif+SC:wght@500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <meta property="og:title" content="PaperMod 選單" />
-<meta property="og:description" content="&nbsp;啟動 hugo server -D，邊閱讀本頁邊檢視 localhost:1313 &nbsp;選單是Hugo所有主題(theme)的重頭戲，更多資訊可參閱 Hugo 官網 Menus | Hugo &nbsp;" />
+<meta property="og:description" content="啟動 hugo server -D，邊閱讀本頁邊檢視 localhost:1313 選單是Hugo所有主題(theme)的重頭戲，更多資訊可參閱 Hugo 官網 Menus | Hugo 在 \content (省略了D:\MyData\bl" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://diy99.github.io/papermod/posts/papermod-menu/" /><meta property="og:image" content="https://diy99.github.io/papermod/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-10-22T00:00:00+00:00" />
@@ -69,7 +69,7 @@
 <meta name="twitter:image" content="https://diy99.github.io/papermod/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
 
 <meta name="twitter:title" content="PaperMod 選單"/>
-<meta name="twitter:description" content="&nbsp;啟動 hugo server -D，邊閱讀本頁邊檢視 localhost:1313 &nbsp;選單是Hugo所有主題(theme)的重頭戲，更多資訊可參閱 Hugo 官網 Menus | Hugo &nbsp;"/>
+<meta name="twitter:description" content="啟動 hugo server -D，邊閱讀本頁邊檢視 localhost:1313 選單是Hugo所有主題(theme)的重頭戲，更多資訊可參閱 Hugo 官網 Menus | Hugo 在 \content (省略了D:\MyData\bl"/>
 
 
 <script type="application/ld+json">
@@ -98,12 +98,12 @@
   "@type": "BlogPosting",
   "headline": "PaperMod 選單",
   "name": "PaperMod 選單",
-  "description": "\u0026nbsp;啟動 hugo server -D，邊閱讀本頁邊檢視 localhost:1313 \u0026nbsp;選單是Hugo所有主題(theme)的重頭戲，更多資訊可參閱 Hugo 官網 Menus | Hugo \u0026nbsp;",
+  "description": "啟動 hugo server -D，邊閱讀本頁邊檢視 localhost:1313 選單是Hugo所有主題(theme)的重頭戲，更多資訊可參閱 Hugo 官網 Menus | Hugo 在 \\content (省略了D:\\MyData\\bl",
   "keywords": [
     "PaperMod"
   ],
   "articleBody": " 啟動 hugo server -D，邊閱讀本頁邊檢視 localhost:1313 選單是Hugo所有主題(theme)的重頭戲，更多資訊可參閱 Hugo 官網 Menus | Hugo 在 \\content (省略了D:\\MyData\\blog) 資料夾內增加兩個子資料夾 categories, tags 將代碼存至 \\tags\\categories\\_index.md\n--- title: \"分類\" layout: categories summary: categories --- 將代碼存至 \\content\\tags\\_index.md\n--- title: \"標籤\" layout: tags summary: tags --- 在 \\content ) 資料夾內增加三個檔案 archives.md, search.md, about.md，內容如下： archives.md\n--- title: \"歸檔\" layout: \"archives\" summary: \"Archive\" --- search.md\n--- title: \"搜尋\" layout: \"search\" summary: \"search\" --- about.md(修改自 Sulv’s Blog)\n--- title: \"關於\" layout: about date: 2023-09-12 hidemeta: true description: \"\" draft: false # 是否為草稿 comments: false reward: false showToc: false # 顯示目錄 TocOpen: false # 自動展開目錄 disableShare: true # 底部不顯示分享欄 showbreadcrumbs: false searchHidden: true cover: image: \"\" caption: \"\" alt: \"\" relative: false --- About 編輯 config.yml 第113至124行\n- identifier: categories name: categories url: /categories/ weight: 10 - identifier: tags name: tags url: /tags/ weight: 20 - identifier: example name: example.org url: https://example.org weight: 30 成為\n- identifier: archives name: 歸檔 url: /archives/ weight: 10 - identifier: categories name: 分類 url: /categories/ weight: 20 - identifier: tags name: 標籤 url: /tags/ weight: 30 - identifier: about name: 關於 url: /about/ weight: 40 - identifier: search name: 搜尋 url: /search/ weight: 50 outputs: home: - HTML - RSS - JSON # is necessary 最後5行因 search 而增加 使用 Font Awesome 的方法，可參閱 Menu Example | Hugo 雖然可以使用複製、貼上功能編輯 config.yml，強烈建議自己作一遍，因為你可能會增刪。增刪時要非常注意格式，例如：- identifier: archives 前面有四個空白鍵「space」，不可多也不可少，文章的 Front Matter 有空白鍵也是，才不致 Error\n\\content 內的子資料夾都要建立 _index.md 檔，將代碼存至 \\content\\posts\\_index.md\n--- title: \"文章\" # description: \"\" hidemeta: true # 是否隱藏文章的原訊息，如發佈日期、作者等 --- ",
-  "wordCount" : "651",
+  "wordCount" : "585",
   "inLanguage": "zh-tw",
   "datePublished": "2023-10-22T00:00:00Z",
   "dateModified": "2023-10-22T00:00:00Z",
@@ -190,41 +190,41 @@
     <h1 class="post-title">
       PaperMod 選單
     </h1>
-    <div class="post-meta">📅&nbsp;<span title='2023-10-22 00:00:00 +0000 UTC'>2023-10-22</span>&nbsp;·&nbsp;⏱️&nbsp;2 分鐘&nbsp;·&nbsp;📃&nbsp;651 字&nbsp;·&nbsp;
+    <div class="post-meta">📅&nbsp;<span title='2023-10-22 00:00:00 +0000 UTC'>2023-10-22</span>&nbsp;·&nbsp;⏱️&nbsp;2 分鐘&nbsp;·&nbsp;📃&nbsp;585 字&nbsp;·&nbsp;
 📝&nbsp;Jang
 
 </div>
   </header> 
 
-  <div class="post-content"><p><i class="fa-solid fa-bullhorn" style="color:#e55;"></i>&nbsp;啟動 hugo server -D，邊閱讀本頁邊檢視 localhost:1313
-<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i>&nbsp;選單是Hugo所有主題(theme)的重頭戲，更多資訊可參閱 Hugo 官網 <a href="https://gohugo.io/content-management/menus/">Menus | Hugo</a>
-<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i>&nbsp;在 \content (省略了<span style="color:#FF3300;">D:\MyData\blog</span>) 資料夾內增加兩個子資料夾 categories, tags
-<br><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i>&nbsp;將代碼存至 \tags\categories\_index.md</p>
+  <div class="post-content"><p><i class="fa-solid fa-bullhorn" style="color:#e55;"></i> 啟動 hugo server -D，邊閱讀本頁邊檢視 localhost:1313
+<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 選單是Hugo所有主題(theme)的重頭戲，更多資訊可參閱 Hugo 官網 <a href="https://gohugo.io/content-management/menus/">Menus | Hugo</a>
+<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 在 \content (省略了<span style="color:#FF3300;">D:\MyData\blog</span>) 資料夾內增加兩個子資料夾 categories, tags
+<br><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i> 將代碼存至 \tags\categories\_index.md</p>
 <pre tabindex="0"><code>---
 title: &#34;分類&#34;
 layout: categories
 summary: categories
 ---
-</code></pre><p><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i>&nbsp;將代碼存至 \content\tags\_index.md</p>
+</code></pre><p><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i> 將代碼存至 \content\tags\_index.md</p>
 <pre tabindex="0"><code>---
 title: &#34;標籤&#34;
 layout: tags
 summary: tags
 ---
-</code></pre><p><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i>&nbsp;在 \content ) 資料夾內增加三個檔案 archives.md, search.md, about.md，內容如下：
-<br><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i>&nbsp;archives.md</p>
+</code></pre><p><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 在 \content ) 資料夾內增加三個檔案 archives.md, search.md, about.md，內容如下：
+<br><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i> archives.md</p>
 <pre tabindex="0"><code>---
 title: &#34;歸檔&#34;
 layout: &#34;archives&#34;
 summary: &#34;Archive&#34;
 ---
-</code></pre><p><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i>&nbsp;search.md</p>
+</code></pre><p><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i> search.md</p>
 <pre tabindex="0"><code>---
 title: &#34;搜尋&#34;
 layout: &#34;search&#34;
 summary: &#34;search&#34;
 ---
-</code></pre><p><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i>&nbsp;about.md(修改自 <a href="https://github.com/xyming108/sulv-hugo-papermod/blob/main/content/about.md?plain=1">Sulv&rsquo;s Blog</a>)</p>
+</code></pre><p><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i> about.md(修改自 <a href="https://github.com/xyming108/sulv-hugo-papermod/blob/main/content/about.md?plain=1">Sulv&rsquo;s Blog</a>)</p>
 <pre tabindex="0"><code>---
 title: &#34;關於&#34;
 layout: about
@@ -246,7 +246,7 @@ cover:
     relative: false
 ---
 About
-</code></pre><p><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i>&nbsp;編輯 <a href="/papermod/posts/hugo-papermod/#config">config.yml</a> 第113至124行</p>
+</code></pre><p><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 編輯 <a href="/papermod/posts/hugo-papermod/#config">config.yml</a> 第113至124行</p>
 <pre tabindex="0"><code>    - identifier: categories
       name: categories
       url: /categories/
@@ -286,10 +286,10 @@ outputs:
         - HTML
         - RSS
         - JSON # is necessary    
-</code></pre><p><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i>&nbsp;最後5行因 search 而增加
-<br><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i>&nbsp;使用 Font Awesome 的方法，可參閱 <a href="https://gohugo.io/content-management/menus/#example-site-configuration">Menu Example | Hugo</a>
-<br><i class="fa-solid fa-bullhorn" style="color:red;"></i>&nbsp;雖然可以使用複製、貼上功能編輯 config.yml，強烈建議自己作一遍，因為你可能會增刪。<span style="color:#FF3300;">增刪時要非常注意格式</span>，例如：- identifier: archives 前面有四個空白鍵「space」，不可多也不可少，文章的 Front Matter 有空白鍵也是，才不致 Error</p>
-<p><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i>&nbsp;\content 內的子資料夾都要建立 _index.md 檔，將代碼存至 \content\posts\_index.md</p>
+</code></pre><p><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i> 最後5行因 search 而增加
+<br><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i> 使用 Font Awesome 的方法，可參閱 <a href="https://gohugo.io/content-management/menus/#example-site-configuration">Menu Example | Hugo</a>
+<br><i class="fa-solid fa-bullhorn" style="color:red;"></i> 雖然可以使用複製、貼上功能編輯 config.yml，強烈建議自己作一遍，因為你可能會增刪。<span style="color:#FF3300;">增刪時要非常注意格式</span>，例如：- identifier: archives 前面有四個空白鍵「space」，不可多也不可少，文章的 Front Matter 有空白鍵也是，才不致 Error</p>
+<p><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> \content 內的子資料夾都要建立 _index.md 檔，將代碼存至 \content\posts\_index.md</p>
 <pre tabindex="0"><code>---
 title: &#34;文章&#34;
 # description: &#34;&#34;
@@ -304,10 +304,10 @@ hidemeta: true # 是否隱藏文章的原訊息，如發佈日期、作者等
       <li><a href="https://diy99.github.io/papermod/tags/papermod/">PaperMod</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://diy99.github.io/papermod/posts/hugo-papermod/">
+  <a class="prev" href="https://diy99.github.io/papermod/posts/papermod-markdown/">
     <span class="title">« 上一頁</span>
     <br>
-    <span>📌 Hugo PaperMod 與 GitHub Pages</span>
+    <span>PaperMod Markdown</span>
   </a>
   <a class="next" href="https://diy99.github.io/papermod/posts/git-bash/">
     <span class="title">下一頁 »</span>
