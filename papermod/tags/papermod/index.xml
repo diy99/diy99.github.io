@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 28 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diy99.github.io/papermod/tags/papermod/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Oct 2023 05:48:48 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/tags/papermod/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>📌 Hugo PaperMod 與 GitHub Pages</title>
       <link>https://diy99.github.io/papermod/posts/hugo-papermod/</link>
@@ -19,6 +19,24 @@
       
       <guid>https://diy99.github.io/papermod/posts/hugo-papermod/</guid>
       <description>本文更新日期: 2023-10-25 Hugo特色 Hugo 是用 Go 編寫的靜態網站生成器，一般只需幾秒鐘就能生成一個網站，被稱為「世界上最快的網站構建框架」，也使 Hugo 大受歡迎</description>
+    </item>
+    
+    <item>
+      <title>Hugo PaperMod Google Font</title>
+      <link>https://diy99.github.io/papermod/posts/papermod-google-font/</link>
+      <pubDate>Mon, 30 Oct 2023 05:48:48 +0800</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/papermod-google-font/</guid>
+      <description>選擇 Google Font 前往 https://fonts.google.com/ 選擇中文字型，可參閱 Google Fonts 網路中文/英文字型應用 安裝 Google Font 以 Noto Serif TC 為例，因為也要使用简体，所以加入 Noto Serif SC 複製 \themes\papermod\layouts\partials\extend_head.html 至 \layouts\partials\extend_head.html 編輯 \layou</description>
+    </item>
+    
+    <item>
+      <title>PaperMod FAQs</title>
+      <link>https://diy99.github.io/papermod/posts/papermod-faqs/</link>
+      <pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/papermod-faqs/</guid>
+      <description>PaperMod 作者的 wiki，一定要看，底下僅就 FAQs 覆蓋主題模板 詳 Override theme template 勿直接修改 \themes\papermod\layouts 內的 html 檔 例如: 複製 \themes\papermod\layouts\partials\header.html 至 \layouts\partials\header.html 編輯 \layouts\partials\header.html 就可以取代 \themes\papermod\layouts\partials\header.html 的內容 自訂 CSS 詳 Bundling Custom css with theme&amp;rsquo;s assets 建</description>
     </item>
     
     <item>
