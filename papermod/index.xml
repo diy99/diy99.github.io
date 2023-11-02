@@ -11,14 +11,34 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 30 Oct 2023 05:48:48 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Nov 2023 05:29:16 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>📌 Hugo PaperMod 與 GitHub Pages</title>
       <link>https://diy99.github.io/papermod/posts/hugo-papermod/</link>
       <pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diy99.github.io/papermod/posts/hugo-papermod/</guid>
-      <description>本文更新日期: 2023-10-25 Hugo特色 Hugo 是用 Go 編寫的靜態網站生成器，一般只需幾秒鐘就能生成一個網站，被稱為「世界上最快的網站構建框架」，也使 Hugo 大受歡迎</description>
+      <description>本文更新日期: 2023-11-01 Hugo特色 Hugo 是用 Go 編寫的靜態網站生成器，一般只需幾秒鐘就能生成一個網站，被稱為「世界上最快的網站構建框架」，也使 Hugo 大受歡迎</description>
+    </item>
+    
+    <item>
+      <title>[en] Hugo PaperMod Font Awesome</title>
+      <link>https://diy99.github.io/papermod/posts/papermod-font-awesome-en/</link>
+      <pubDate>Wed, 01 Nov 2023 05:29:16 +0800</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/papermod-font-awesome-en/</guid>
+      <description>For example, Font Awesome 6.4.2 Free for Web Download Font Awesome from https://fontawesome.com/download, default version 6 (can select older versions), click [Free for Web] Unzip, copy fontawesome-free-6.4.2-web\css\all.min.css into .(site root)\assets\css\extended folder. Edit \assets\css\extended\all.min.css, replace all
+../webfonts/ with
+../../webfonts/ Copy subfolder webfonts of fontawesome-free-6.4.2-web into .(site root)\static</description>
+    </item>
+    
+    <item>
+      <title>Hugo PaperMod Font Awesome</title>
+      <link>https://diy99.github.io/papermod/posts/papermod-font-awesome/</link>
+      <pubDate>Wed, 01 Nov 2023 05:29:02 +0800</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/papermod-font-awesome/</guid>
+      <description>以 Font Awesome 6.4.2 Free for Web 為例 下載 前往 https://fontawesome.com/download，預設變版本6 (可以選擇舊版)，按 [Free for Web] 下載 更多資</description>
     </item>
     
     <item>

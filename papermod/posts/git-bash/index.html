@@ -238,12 +238,12 @@
 <br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 於 git-bash 貼上<code>wget https://diii.neocities.org/img/git02.webp</code>下載上一張圖片做測試</p>
 <h2 id="執行bash">執行Bash<a hidden class="anchor" aria-hidden="true" href="#執行bash">#</a></h2>
 <p><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 將底下 shell script 以原始碼編輯器(如Notepad++)存至 D:\App\PortableGit\hello.sh，於 git-bash 貼上<code>sh hello.sh</code>執行(<i class="fa-solid fa-bullhorn" style="color:#e55;"></i> Windows 不需<code>chmod +x hello.sh</code>)</p>
-<pre tabindex="0"><code>#!/bin/bash
-Reset=$(tput sgr0)
-Blue=$(tput setaf 4)
-
-echo -e &#34;Hello ${Blue}World${Reset}!&#34;
-</code></pre><p><img loading="lazy" src="https://diii.neocities.org/img/git03.webp#center" alt=""  />
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nv">Reset</span><span class="o">=</span><span class="k">$(</span>tput sgr0<span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">Blue</span><span class="o">=</span><span class="k">$(</span>tput setaf 4<span class="k">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> -e <span class="s2">&#34;Hello </span><span class="si">${</span><span class="nv">Blue</span><span class="si">}</span><span class="s2">World</span><span class="si">${</span><span class="nv">Reset</span><span class="si">}</span><span class="s2">!&#34;</span>
+</span></span></code></pre></div><p><img loading="lazy" src="https://diii.neocities.org/img/git03.webp#center" alt=""  />
 
 <i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 如同<a href="/papermod/posts/app-folder/#cmd">cmd快速進入中文資料夾</a>，於 git-bash 貼上<code>cd &quot;D:\相簿\登山&quot;</code>
 <img loading="lazy" src="https://diii.neocities.org/img/git04.webp#center" alt=""  />
