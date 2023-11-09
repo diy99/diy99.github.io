@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>可攜式APP on DIY 99</title>
+    <link>https://diy99.github.io/papermod/tags/%E5%8F%AF%E6%94%9C%E5%BC%8Fapp/</link>
+    <description>Recent content in 可攜式APP on DIY 99</description>
+    <image>
+      <title>DIY 99</title>
+      <url>https://diy99.github.io/papermod/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://diy99.github.io/papermod/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sun, 05 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diy99.github.io/papermod/tags/%E5%8F%AF%E6%94%9C%E5%BC%8Fapp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ImageMagick Mogrify WebP 圖片瘦身</title>
+      <link>https://diy99.github.io/papermod/posts/imagemagick-webp/</link>
+      <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/imagemagick-webp/</guid>
+      <description>圖片瘦身重要性 手機相片檔案很大，直接放罝於網頁，會造成瀏覽頁面時速度變慢，進而影響網站效能。 相機內的相片，如果有特別喜歡的就要保留原來檔案，</description>
+    </item>
+    
+    <item>
+      <title>Git Bash for Windows</title>
+      <link>https://diy99.github.io/papermod/posts/git-bash/</link>
+      <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/git-bash/</guid>
+      <description>Git Bash名稱 Git for Windows 提供了BASH模擬，用於從命令列執行 Git，啟動程式是 git-bash.exe。 Git Bash 提供源自 Linux/Unix 指令操作Window 檔案系</description>
+    </item>
+    
+    <item>
+      <title>Notepad&#43;&#43; 原始碼編輯器</title>
+      <link>https://diy99.github.io/papermod/posts/notepad&#43;&#43;/</link>
+      <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/notepad&#43;&#43;/</guid>
+      <description>原始碼編輯器的功能 工欲善其事，必先利其器。🙂雜七雜八的記事與🙃寫程式免不了使用原始碼編輯器(source code editor)，我已習慣Notep</description>
+    </item>
+    
+  </channel>
+</rss>

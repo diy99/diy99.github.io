@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>ImageMagick WebP 圖片瘦身 | DIY 99</title>
-<meta name="keywords" content="PaperMod, 圖片瘦身">
+<title>ImageMagick Mogrify WebP 圖片瘦身 | DIY 99</title>
+<meta name="keywords" content="PaperMod, 圖片瘦身, 可攜式APP">
 <meta name="description" content="圖片瘦身重要性 手機相片檔案很大，直接放罝於網頁，會造成瀏覽頁面時速度變慢，進而影響網站效能。 相機內的相片，如果有特別喜歡的就要保留原來檔案，">
 <meta name="author" content="
 📝&nbsp;Jang">
@@ -57,7 +57,7 @@
         }
 
     </style>
-</noscript><link href="https://fonts.googleapis.com/css2?family=Oswald&family=Noto+Sans+TC&family=Noto+Sans+SC&family=Noto+Serif+TC:wght@500;700&family=Noto+Serif+SC:wght@500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><meta property="og:title" content="ImageMagick WebP 圖片瘦身" />
+</noscript><link href="https://fonts.googleapis.com/css2?family=Oswald&family=Noto+Sans+TC&family=Noto+Sans+SC&family=Noto+Serif+TC:wght@500;700&family=Noto+Serif+SC:wght@500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><meta property="og:title" content="ImageMagick Mogrify WebP 圖片瘦身" />
 <meta property="og:description" content="圖片瘦身重要性 手機相片檔案很大，直接放罝於網頁，會造成瀏覽頁面時速度變慢，進而影響網站效能。 相機內的相片，如果有特別喜歡的就要保留原來檔案，" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://diy99.github.io/papermod/posts/imagemagick-webp/" /><meta property="og:image" content="https://diy99.github.io/papermod/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
@@ -67,7 +67,7 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://diy99.github.io/papermod/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
 
-<meta name="twitter:title" content="ImageMagick WebP 圖片瘦身"/>
+<meta name="twitter:title" content="ImageMagick Mogrify WebP 圖片瘦身"/>
 <meta name="twitter:description" content="圖片瘦身重要性 手機相片檔案很大，直接放罝於網頁，會造成瀏覽頁面時速度變慢，進而影響網站效能。 相機內的相片，如果有特別喜歡的就要保留原來檔案，"/>
 
 
@@ -85,7 +85,7 @@
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "ImageMagick WebP 圖片瘦身",
+      "name": "ImageMagick Mogrify WebP 圖片瘦身",
       "item": "https://diy99.github.io/papermod/posts/imagemagick-webp/"
     }
   ]
@@ -95,14 +95,14 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "ImageMagick WebP 圖片瘦身",
-  "name": "ImageMagick WebP 圖片瘦身",
+  "headline": "ImageMagick Mogrify WebP 圖片瘦身",
+  "name": "ImageMagick Mogrify WebP 圖片瘦身",
   "description": "圖片瘦身重要性 手機相片檔案很大，直接放罝於網頁，會造成瀏覽頁面時速度變慢，進而影響網站效能。 相機內的相片，如果有特別喜歡的就要保留原來檔案，",
   "keywords": [
-    "PaperMod", "圖片瘦身"
+    "PaperMod", "圖片瘦身", "可攜式APP"
   ],
-  "articleBody": "圖片瘦身重要性 手機相片檔案很大，直接放罝於網頁，會造成瀏覽頁面時速度變慢，進而影響網站效能。 相機內的相片，如果有特別喜歡的就要保留原來檔案，勿於瘦身後刪除。\n常用的網頁圖片格式 JPEG(.jpg)：特別適合儲存照片和網頁圖像，相片通常是JPEG格式 PNG(.png)：PNG 格式的檔案通常比JPEG大，但可以提供更好的網頁圖片品質。 WebP(.webp)：WebP 格式的檔案通常比JPEG小，同時保持相對較高的網頁圖片品質。\nImageMagick 安裝 ImageMagick 是圖片瘦身好幫手 Windows 作業系統 建立 D:\\App資料夾，沒有D槽可參閱硬碟分割與調整 前往 ImageMagick Windows Binary Release，下載 ImageMagick-7.1.1-21-portable-Q16-x64.zip(7.1.1-21是我下載時的版本號碼)， 可能要再安裝 Visual C++ Redistributable Package 解壓縮至 D:\\App\\ImageMagick，因為我只使用 mogrify.exe，其它可通通刪除 Arch Linux 作業系統\nsudo pacman -S imagemagick 圖片瘦身方法 以 jpg 轉換至 webp 為主，詳閱之後，你會發現稍加修改，各種格式的轉換都非常容易。而使用 Notepad++ 編輯指令，再貼至 cmd 或 Git Bash 執行，更能輕鬆駕馭指令。 開啟 cmd 或 Git Bash (底下操作，cmd、Git Bash 皆適用)，可使用 FastStone Image Viewer 比較圖片瘦身前後的差異 例如要轉換 D:\\相簿\\旅遊 內的全部相片，先切換至資料夾\ncd \"D:\\相簿\\旅遊\" 我的手機相片影像大小 4096×2304(16:9)、解析度 72dpi，我的 SONY 電視 KDL-42W700B 幕解析度 Full HD 1920×1080，1920÷4096=0.4688，因此於 cmd 或 Git Bash 貼上指令\n\"D:\\App\\ImageMagick\\mogrify\" -format jpg -resize 46.88% -quality 85 *.jpg 小心，上面指令會覆蓋原來的 jpg 檔。將-format jpg改為-format webp後會生成 .webp，而原來 jpg 檔還在。因此若將上面指令的*.jpg改為*.webp就可以轉換 webp 成 jpg。 -quality 85，圖片品質 85與100，人眼幾乎無法辨識兩者。解析度 72dpi，可使用參數 -density 改變。 4K電視 幕解析度 3840×2160，是 Full HD 的寬、高各兩倍。1920近似值2000，所以3840就接近4000 - 4K\n有時侯資料夾內檔案太多或不要覆蓋原來的 jpg 檔，就先建立 D:\\相簿\\tmp 資料夾，生成檔案至此資料夾，指令改成(只多了-path D:/相簿/tmp/)\n\"D:\\App\\ImageMagick\\mogrify\" -path D:/相簿/tmp/ -format jpg -resize 46.88% -quality 85 *.jpg 網頁圖片1920×1080似乎有些大，我考慮 1120×630，1120÷1920=0.5833，所以轉換成 webp 的指令為\n\"D:\\App\\ImageMagick\\mogrify\" -format webp -resize 58.33% -quality 80 *.jpg 參考資料 網頁設計常見問答 像素與解析度 Mogrify - ImageMagick – Command-line Tools ImageMagick 批次處理圖片 Optimizing your Images for the Web ImageMagick – WebP Encoding Options 什麼是4K電視\n",
-  "wordCount" : "1048",
+  "articleBody": "圖片瘦身重要性 手機相片檔案很大，直接放罝於網頁，會造成瀏覽頁面時速度變慢，進而影響網站效能。 相機內的相片，如果有特別喜歡的就要保留原來檔案，勿於瘦身後刪除。\n常用的網頁圖片格式 JPEG(.jpg)：特別適合儲存照片和網頁圖像，相片通常是JPEG格式 PNG(.png)：PNG 格式的檔案通常比JPEG大，但可以提供更好的網頁圖片品質。 WebP(.webp)：WebP 格式的檔案通常比JPEG小，同時保持相對較高的網頁圖片品質。LINE 未支援 WebP😝\nImageMagick 安裝 ImageMagick 是圖片瘦身好幫手 Windows 作業系統 建立 D:\\App資料夾，沒有D槽可參閱硬碟分割與調整 前往 ImageMagick Windows Binary Release，下載 ImageMagick-7.1.1-21-portable-Q16-x64.zip(7.1.1-21是我下載時的版本號碼)， 可能要再安裝 Visual C++ Redistributable Package 解壓縮至 D:\\App\\ImageMagick Arch Linux 作業系統\nsudo pacman -S imagemagick 圖片瘦身方法 以 jpg 轉換至 webp 為主，詳閱之後，你會發現稍加修改，各種格式的轉換都非常容易。而使用 Notepad++ 編輯指令，再貼至 cmd 或 Git Bash 執行，更能輕鬆駕馭指令。 開啟 cmd 或 Git Bash (底下操作，cmd、Git Bash 皆適用)，可使用 FastStone Image Viewer 比較圖片瘦身前後的差異 例如要轉換 D:\\相簿\\旅遊 內的全部相片，先切換至資料夾\ncd \"D:\\相簿\\旅遊\" 我的手機相片影像大小 4096×2304(16:9)、解析度 72dpi，我的 SONY 電視 KDL-42W700B 幕解析度 Full HD 1920×1080，1920÷4096=0.4688，因此於 cmd 或 Git Bash 貼上指令\n\"D:\\App\\ImageMagick\\mogrify\" -format jpg -resize 46.88% -quality 85 *.jpg 小心，上面指令會覆蓋原來的 jpg 檔。將-format jpg改為-format webp後會生成 .webp，而原來 jpg 檔還在。因此若將上面指令的*.jpg改為*.webp就可以轉換 webp 成 jpg。 -quality 85，圖片品質 85與100，人眼幾乎無法辨識兩者。解析度 72dpi，可使用參數 -density 改變。 4K電視 幕解析度 3840×2160，是 Full HD 的寬、高各兩倍。1920近似值2000，所以3840就接近4000 - 4K\n有時侯資料夾內檔案太多或不要覆蓋原來的 jpg 檔，就先建立 D:\\相簿\\tmp 資料夾，生成檔案至此資料夾，指令改成(只多了-path D:/相簿/tmp/)\n\"D:\\App\\ImageMagick\\mogrify\" -path D:/相簿/tmp/ -format jpg -resize 46.88% -quality 85 *.jpg 網頁圖片1920×1080似乎有些大，我考慮 1120×630，1120÷1920=0.5833，所以轉換成 webp 的指令為\n\"D:\\App\\ImageMagick\\mogrify\" -format webp -resize 58.33% -quality 80 *.jpg 參考資料 網頁設計常見問答 像素與解析度 Mogrify - ImageMagick – Command-line Tools ImageMagick 批次處理圖片 Optimizing your Images for the Web ImageMagick – WebP Encoding Options 什麼是4K電視\n",
+  "wordCount" : "1017",
   "inLanguage": "zh-tw",
   "datePublished": "2023-11-05T00:00:00Z",
   "dateModified": "2023-11-05T00:00:00Z",
@@ -187,9 +187,9 @@
   <header class="post-header">
     
     <h1 class="post-title">
-      ImageMagick WebP 圖片瘦身
+      ImageMagick Mogrify WebP 圖片瘦身
     </h1>
-    <div class="post-meta">📅&nbsp;<span title='2023-11-05 00:00:00 +0000 UTC'>2023-11-05</span>&nbsp;·&nbsp;⏱️&nbsp;3 分鐘&nbsp;·&nbsp;📃&nbsp;1048 字&nbsp;·&nbsp;
+    <div class="post-meta">📅&nbsp;<span title='2023-11-05 00:00:00 +0000 UTC'>2023-11-05</span>&nbsp;·&nbsp;⏱️&nbsp;3 分鐘&nbsp;·&nbsp;📃&nbsp;1017 字&nbsp;·&nbsp;
 📝&nbsp;Jang
 
 </div>
@@ -218,13 +218,13 @@
 <h2 id="常用的網頁圖片格式">常用的網頁圖片格式<a hidden class="anchor" aria-hidden="true" href="#常用的網頁圖片格式">#</a></h2>
 <p><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> JPEG(.jpg)：特別適合儲存照片和網頁圖像，相片通常是JPEG格式
 <br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> PNG(.png)：PNG 格式的檔案通常比JPEG大，但可以提供更好的網頁圖片品質。
-<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> WebP(.webp)：WebP 格式的檔案通常比JPEG小，同時保持相對較高的網頁圖片品質。</p>
+<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> WebP(.webp)：WebP 格式的檔案通常比JPEG小，同時保持相對較高的網頁圖片品質。<a href="https://line.me/zh-hant/">LINE</a> 未支援 WebP😝</p>
 <h2 id="imagemagick-安裝">ImageMagick 安裝<a hidden class="anchor" aria-hidden="true" href="#imagemagick-安裝">#</a></h2>
 <p>ImageMagick 是圖片瘦身好幫手
 <br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> Windows 作業系統
 <br><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i> 建立 D:\App資料夾，沒有D槽可參閱<a href="/papermod/posts/disk-partition/">硬碟分割與調整</a>
 <br><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i> 前往 <a href="https://imagemagick.org/script/download.php#windows">ImageMagick Windows Binary Release</a>，下載 <span style="color:#3776D0;">ImageMagick-7.1.1-21-portable-Q16-x64.zip</span>(7.1.1-21是我下載時的版本號碼)，<i class="fa-solid fa-bullhorn" style="color:#e55;"></i> 可能要再安裝 <a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads">Visual C++ Redistributable Package</a>
-<br><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i> 解壓縮至 D:\App\ImageMagick，因為我只使用 mogrify.exe，其它可通通刪除
+<br><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i> 解壓縮至 D:\App\ImageMagick
 <br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> Arch Linux 作業系統</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo pacman -S imagemagick
 </span></span></code></pre></div><h2 id="圖片瘦身方法">圖片瘦身方法<a hidden class="anchor" aria-hidden="true" href="#圖片瘦身方法">#</a></h2>
@@ -258,12 +258,13 @@
     <ul class="post-tags">
       <li><a href="https://diy99.github.io/papermod/tags/papermod/">PaperMod</a></li>
       <li><a href="https://diy99.github.io/papermod/tags/%E5%9C%96%E7%89%87%E7%98%A6%E8%BA%AB/">圖片瘦身</a></li>
+      <li><a href="https://diy99.github.io/papermod/tags/%E5%8F%AF%E6%94%9C%E5%BC%8Fapp/">可攜式APP</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://diy99.github.io/papermod/posts/hugo-papermod/">
+  <a class="prev" href="https://diy99.github.io/papermod/posts/archlinux-base-install/">
     <span class="title">« 上一頁</span>
     <br>
-    <span>📌 Hugo PaperMod 與 GitHub Pages</span>
+    <span>[bash] Arch Linux Base Install - 基礎安裝</span>
   </a>
   <a class="next" href="https://diy99.github.io/papermod/posts/papermod-font-awesome-en/">
     <span class="title">下一頁 »</span>
@@ -280,7 +281,7 @@
   data-app-id="03b773f6-bc48-47d6-b4a5-3452554ff3d2"
   data-page-id="4d8b3a343f37d8f6a6d3e23b6a9b934b"
   data-page-url="https://diy99.github.io/papermod/posts/imagemagick-webp/"
-  data-page-title="ImageMagick WebP 圖片瘦身"></div>
+  data-page-title="ImageMagick Mogrify WebP 圖片瘦身"></div>
 <script defer src="/papermod/js/zh-tw.js"></script>
 <script defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
