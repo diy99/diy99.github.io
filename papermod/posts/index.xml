@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 08 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diy99.github.io/papermod/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diy99.github.io/papermod/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>📌 Hugo PaperMod 與 GitHub Pages</title>
       <link>https://diy99.github.io/papermod/posts/hugo-papermod/</link>
@@ -19,6 +19,15 @@
       
       <guid>https://diy99.github.io/papermod/posts/hugo-papermod/</guid>
       <description>本文更新日期: 2023-11-01 Hugo特色 Hugo 是用 Go 編寫的靜態網站生成器，一般只需幾秒鐘就能生成一個網站，被稱為「世界上最快的網站構建框架」，也使 Hugo 大受歡迎</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux LXQt 安裝&#43;SDDM自動登入&#43;Fcitx5輸入法</title>
+      <link>https://diy99.github.io/papermod/posts/lxqt/</link>
+      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/lxqt/</guid>
+      <description>先完成 Arch Linux Base Install - 基礎安裝 官網LXQt，作者 bash 檔 lxqt.txt 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46</description>
     </item>
     
     <item>

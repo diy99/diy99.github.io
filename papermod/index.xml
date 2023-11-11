@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 08 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diy99.github.io/papermod/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diy99.github.io/papermod/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>📌 Hugo PaperMod 與 GitHub Pages</title>
       <link>https://diy99.github.io/papermod/posts/hugo-papermod/</link>
@@ -19,6 +19,24 @@
       
       <guid>https://diy99.github.io/papermod/posts/hugo-papermod/</guid>
       <description>本文更新日期: 2023-11-01 Hugo特色 Hugo 是用 Go 編寫的靜態網站生成器，一般只需幾秒鐘就能生成一個網站，被稱為「世界上最快的網站構建框架」，也使 Hugo 大受歡迎</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux LXQt 安裝&#43;SDDM自動登入&#43;Fcitx5輸入法</title>
+      <link>https://diy99.github.io/papermod/posts/lxqt/</link>
+      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/lxqt/</guid>
+      <description>先完成 Arch Linux Base Install - 基礎安裝 官網LXQt，作者 bash 檔 lxqt.txt 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux KDE Plasma 安裝, SDDM自動登入, Fcitx5輸入法</title>
+      <link>https://diy99.github.io/papermod/arch-linux-kde-plasma-install/</link>
+      <pubDate>Thu, 09 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/arch-linux-kde-plasma-install/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -137,7 +155,7 @@
       <pubDate>Tue, 12 Sep 2023 08:28:30 +0800</pubDate>
       
       <guid>https://diy99.github.io/papermod/about/</guid>
-      <description>I was born in 1959, 台中市神岡區居民。上面相片，台南官田採紅菱，年約31。 國立臺灣師範大學數學系 就讀大三時於數學傳播發表 三角形諸心的向量表示 約2001年時以 CRLin 為名 發表 Windows OS 安裝 Apache+PHP+MySQL 於 MozTW.org 發表 自製Firefox portable的方法 因使用Bash成功安裝 Arch Linux 而架設此網站分享成果 Hugo+PaperMod+GitHub Pages架設網站容易嗎？我認為有點難，因為參考了許多網路資料，大都已太舊或有bug而不適用，在此分享成功的研究結果。縱然閱讀Hugo架設網站者少，我依然樂此不疲。Hugo官網會更新資料，因此本站文章若沒有及時更新，自然也會不適用。若是如此，希望您有處理的能力！ 原本採用 MemE 主題，已停止
+      <description>I was born in 1959, 台中市神岡區居民。上面相片，台南官田採紅菱，年約31。 國立臺灣師範大學數學系 就讀大三時於數學傳播發表 三角形諸心的向量表示 約2001年時以 CRLin 為名 發表 Windows OS 安裝 Apache+PHP+MySQL 於 MozTW.org 發表 自製Firefox portable的方法 因使用Bash成功 安裝Arch Linux 而架設此網站分享成果 Hugo+PaperMod+GitHub Pages架設網站容易嗎？我認為有點難，因為參考了許多網路資料，大都已太舊或有bug而不適用，在此分享成功的研究結果。縱然閱讀Hugo架設網站者少，我依然樂此不疲。Hugo官網會更新資料，因此本站文章若沒有及時更新，自然也會不適用。若是如此，希望您有處理的能力！ 原本採用 MemE 主題，已停止
 保留測試文章動畫留念 </description>
     </item>
     
