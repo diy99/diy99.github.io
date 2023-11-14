@@ -11,7 +11,34 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 10 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diy99.github.io/papermod/categories/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Nov 2023 06:05:39 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/categories/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux KDE 安裝&#43;SDDM自動登入&#43;Fcitx5輸入法</title>
+      <link>https://diy99.github.io/papermod/posts/kde/</link>
+      <pubDate>Mon, 13 Nov 2023 06:05:39 +0800</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/kde/</guid>
+      <description>先完成 Arch Linux Base Install - 基礎安裝 官網KDE，作者 bash 檔 kde.txt 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47</description>
+    </item>
+    
+    <item>
+      <title>[bash] Arch Linux Base Install - 基礎安裝</title>
+      <link>https://diy99.github.io/papermod/posts/archlinux-base-install/</link>
+      <pubDate>Sun, 12 Nov 2023 06:30:39 +0800</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/archlinux-base-install/</guid>
+      <description>上圖，bash 執行過程 简体中文参阅 [bash]基础安装 作者的 bash 檔 install.txt 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux Xfce 安裝&#43;SDDM自動登入&#43;Fcitx5輸入法</title>
+      <link>https://diy99.github.io/papermod/posts/xfce/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/xfce/</guid>
+      <description>先完成 Arch Linux Base Install - 基礎安裝 官網Xfce，作者 bash 檔 xfce.txt 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46</description>
+    </item>
+    
     <item>
       <title>Arch Linux LXQt 安裝&#43;SDDM自動登入&#43;Fcitx5輸入法</title>
       <link>https://diy99.github.io/papermod/posts/lxqt/</link>
@@ -19,15 +46,6 @@
       
       <guid>https://diy99.github.io/papermod/posts/lxqt/</guid>
       <description>先完成 Arch Linux Base Install - 基礎安裝 官網LXQt，作者 bash 檔 lxqt.txt 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46</description>
-    </item>
-    
-    <item>
-      <title>[bash] Arch Linux Base Install - 基礎安裝</title>
-      <link>https://diy99.github.io/papermod/posts/archlinux-base-install/</link>
-      <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://diy99.github.io/papermod/posts/archlinux-base-install/</guid>
-      <description>上圖，bash 執行過程 简体中文参阅 [bash]基础安装 作者的 bash 檔 install.txt 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37</description>
     </item>
     
   </channel>
