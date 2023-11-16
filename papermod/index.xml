@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 13 Nov 2023 06:05:39 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Nov 2023 06:08:45 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>📌 Hugo PaperMod 與 GitHub Pages</title>
       <link>https://diy99.github.io/papermod/posts/hugo-papermod/</link>
@@ -19,6 +19,15 @@
       
       <guid>https://diy99.github.io/papermod/posts/hugo-papermod/</guid>
       <description>本文更新日期: 2023-11-01 Hugo特色 Hugo 是用 Go 編寫的靜態網站生成器，一般只需幾秒鐘就能生成一個網站，被稱為「世界上最快的網站構建框架」，也使 Hugo 大受歡迎</description>
+    </item>
+    
+    <item>
+      <title>PortableApps.com Platform</title>
+      <link>https://diy99.github.io/papermod/posts/portableapps.com-platform/</link>
+      <pubDate>Fri, 17 Nov 2023 06:08:45 +0800</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/portableapps.com-platform/</guid>
+      <description>PortableApps.com平台提供各種免費、可攜式APP，當使用者更新、遷移應用程式時，個人資料不受影響。 相關資料: 方便你隨身攜帶的好</description>
     </item>
     
     <item>
@@ -137,7 +146,7 @@
       <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diy99.github.io/papermod/posts/notepad&#43;&#43;/</guid>
-      <description>原始碼編輯器的功能 工欲善其事，必先利其器。🙂雜七雜八的記事與🙃寫程式免不了使用原始碼編輯器(source code editor)，我已習慣Notep</description>
+      <description>原始碼編輯器的功能 工欲善其事，必先利其器。🙂雜七雜八的記事與🙃寫程式免不了使用原始碼編輯器(source code editor)，作者已習慣Note</description>
     </item>
     
     <item>
