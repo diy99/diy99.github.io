@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Windows 系統維護 | DIY 99</title>
+<meta name="keywords" content="Windows系統維護">
+<meta name="description" content="Windows作業系統的維護至關重要，重新安裝是個夢魘，因此也如手機一樣，提供「恢復原廠設定」。無論是重新安裝或恢復原廠設定，都要作Wind">
+<meta name="author" content="
+📝&nbsp;Jang">
+<link rel="canonical" href="https://diy99.github.io/papermod/posts/windows-tool/">
+<link crossorigin="anonymous" href="/papermod/assets/css/stylesheet.3c60e760117cf9a58814f8b11b3a6eaab6e30a69288e84083ebdc2422084f9e4.css" integrity="sha256-PGDnYBF8&#43;aWIFPixGzpuqrbjCmkojoQIPr3CQiCE&#43;eQ=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/papermod/assets/js/highlight.acb54fd32bbc1982428b8850317e45d076b95012730a5936667e6bc21777692a.js" integrity="sha256-rLVP0yu8GYJCi4hQMX5F0Ha5UBJzClk2Zn5rwhd3aSo="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://diy99.github.io/papermod/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://diy99.github.io/papermod/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://diy99.github.io/papermod/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://diy99.github.io/papermod/apple-touch-icon.png">
+<link rel="mask-icon" href="https://diy99.github.io/papermod/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link href="https://fonts.googleapis.com/css2?family=Oswald&family=Noto+Sans+TC&family=Noto+Sans+SC&family=Noto+Serif+TC:wght@500;700&family=Noto+Serif+SC:wght@500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><meta property="og:title" content="Windows 系統維護" />
+<meta property="og:description" content="Windows作業系統的維護至關重要，重新安裝是個夢魘，因此也如手機一樣，提供「恢復原廠設定」。無論是重新安裝或恢復原廠設定，都要作Wind" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://diy99.github.io/papermod/posts/windows-tool/" /><meta property="og:image" content="https://diy99.github.io/papermod/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-27T18:01:57+08:00" />
+<meta property="article:modified_time" content="2023-11-27T18:01:57+08:00" /><meta property="og:site_name" content="DIY 99" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://diy99.github.io/papermod/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
+
+<meta name="twitter:title" content="Windows 系統維護"/>
+<meta name="twitter:description" content="Windows作業系統的維護至關重要，重新安裝是個夢魘，因此也如手機一樣，提供「恢復原廠設定」。無論是重新安裝或恢復原廠設定，都要作Wind"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "文章",
+      "item": "https://diy99.github.io/papermod/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Windows 系統維護",
+      "item": "https://diy99.github.io/papermod/posts/windows-tool/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Windows 系統維護",
+  "name": "Windows 系統維護",
+  "description": "Windows作業系統的維護至關重要，重新安裝是個夢魘，因此也如手機一樣，提供「恢復原廠設定」。無論是重新安裝或恢復原廠設定，都要作Wind",
+  "keywords": [
+    "Windows系統維護"
+  ],
+  "articleBody": "Windows作業系統的維護至關重要，重新安裝是個夢魘，因此也如手機一樣，提供「恢復原廠設定」。無論是重新安裝或恢復原廠設定，都要作Windows系統設定及備份資料。已停產的 Norton Ghost 就是解決惱人的重新Windows系統設定，作者介紹免費的替代APP。 相關資料：系統還原與重設此電腦、WinPE是什麼?\n備份系統前 清理資源回收筒 資源回收筒會佔用 Windows 系統(C槽)，可用 7-Zip 查得隱夾資料夾 C:\\$Recycle.Bin\nWindows系統優化 不滿意 Windows設定功能的預設，可參閱 【教學】Windows 10 系統優化 【教學】Windows 11 系統優化\nC槽的使用者資料夾改到D槽 使用者資料夾就在C槽，如：放置在桌面的資料夾及檔案…，避免還原系統(C槽)時檔案不見，可參閱 C槽的使用者資料夾改到D槽\n停止自動更新 Windows 自動更新後，系統檔臃腫了，甚至速度變慢了，可參閱 關閉Win10自動更新 (要關閉Win11自動更新，可作參考)\nPortableApps.com平台APP Wise Program Uninstaller 除了有安全移除軟體模式，更有強制移除模式，特別適合移除無法透過一般的移除方式，或安全移除模式的軟體。\nWise Registry Cleaner 電腦跑得比以前還慢呢？有可能是因為登錄檔的垃圾所導致。這套軟體可以執行登錄檔的掃描及清理，清理前預設還會自動備份登錄檔，還有一鍵系統最佳化、登錄檔重組功能。\nSmart Defrag 磁碟重組可以將分散的檔案，集中在同一區塊，提升磁碟的效能，改善電腦越來越慢。\nUSB開機隨身碟製作 Windows 無法運作或重新安裝時必備 Ventoy USB開機隨身碟製作，Ventoy 教學 Rufus開機隨身碟製作(可用PortableApps.com平台安裝)，Rufus 教學 如何從USB隨身碟/光碟機中開機 【教學】如何設定usb隨身碟開機 硬碟分割與調整工具 一般而言，只有一顆硬碟而安裝Windows時，就只有C槽。參閱 硬碟分割與調整工具 增加D槽，以存放可攜式(portable,又稱免安裝)APP及資料。\nWinPE WinPE 是 Windows Preinstallation Environment 的縮寫(中文 Windows 預先安裝環境)，簡化版的Microsoft Windows，放在一片可直接啟動的CD或DVD光碟或者隨身碟，以載入到記憶體的方式執行，主要用於系統維護。\nDiskGenius 製作 WinPE 下載DiskGenius (繁體中文、简体中文) 制作DiskGenius WinPE USB启动盘 教程 DiskGenius 无损分区大小调整 教程 备份分区 教程 从镜像文件还原分区 教程 免費，DiskGenius 就可搞定備份與還原系統及調整分區，可於 Windows 及 WinPE 執行\nEasyU - WinPE製作工具 參閱 EasyU官網FAQ 關閉Defender即時保護 下載 EasyU 開啟 EasyU_v3.7.exe (v3.7是版本號) 按 [生成鏡像] ➜ [生成鏡像] 按 [確定] ➜ … 開啟Defender即時保護 Ventoy 製成 USB開機隨身碟 💾 EasyU 可以備份還原Windows作業系統 Easy Image X2 快速分区-恢复镜像\nUSBOX - WinPE製作工具 下載 USBOX ISO 檔 Ventoy 製成 USB開機隨身碟 💾 USBOX 可以備份還原Windows作業系統\n使用微軟官網資料製作 WinPE 參閱 製作屬於自己的WinPE (含 中文/臺灣 語系) 作者討厭 繁體字 這命名，因為沿用氾濫。Traditional Chinese 一詞 Google與Bing 皆翻譯為繁體中文，但 Traditional 是傳統之意。在 Google Chrome 的語言設定，有 英文 - English, 英文(英國) - English(United Kingdom)，中文(繁體), 中文(香港), 中文(簡体)。中文(繁體)應當是中文(臺灣)，如同 中文(香港)，所有小括號內指的是地區，不是國家。臺灣與中國大陸使用相同名詞嗎？電腦術語：臺灣『檔案』與中国大陆『文件』🙄。勿作政治解讀！\n備份與還原Windows作業系統 Windows系統無法運作時，須要 WinPE 開機，再以還原系統APP(如：Norton Ghost)還原Windows作業系統。國外能於 WinPE 執行的還原系統APP，只有付費軟體。\n易数一键还原 下載 易数一键还原，易數一鍵還原基於 DiskGenius 内核開發 【教學】如何安裝易數一鍵還原 易數一鍵還原／操作說明 隱藏檔可用 7-Zip 檢視，於 cmd 可用 attrib 隱藏檔案或資料夾 免費，可於 Windows 及 WinPE 執行。複製 C:\\Program Files\\易數一鍵還原 資科夾 至 D:\\App 資科夾內，以防C槽毀損。\nOneKey一键还原 下載 OneKey一键还原 以 Norton Ghost 為基礎，此版本乎太舊了\nEaseUS Todo Backup Free 下載 EaseUS Todo Backup Free 硬碟備份 — 備份所有內容 - EaseUS 只能於 Windows 執行，要在 WinPE 執行，須升級付費版。\n",
+  "wordCount" : "1686",
+  "inLanguage": "zh-tw",
+  "datePublished": "2023-11-27T18:01:57+08:00",
+  "dateModified": "2023-11-27T18:01:57+08:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Jang"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://diy99.github.io/papermod/posts/windows-tool/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DIY 99",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://diy99.github.io/papermod/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://diy99.github.io/papermod/" accesskey="h" title="DIY99🏡 (Alt + H)">DIY99🏡</a>
+            <div class="logo-switches">
+				<button id="theme-toggle" accesskey="t" title="(Alt + T)">
+				    <span id="moon">🌙</span>
+					<span id="sun">🌞</span>
+				</button>
+				
+				
+				
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://diy99.github.io/papermod/archives/" title="歸檔">
+                    <span><i class="fa-solid fa-boxes-packing"></i>歸檔</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://diy99.github.io/papermod/categories/" title="分類">
+                    <span><i class="fa-solid fa-shuffle"></i>分類</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://diy99.github.io/papermod/tags/" title="標籤">
+                    <span><i class="fa-solid fa-tags"></i>標籤</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://diy99.github.io/papermod/about/" title="關於">
+                    <span><i class="fa-solid fa-address-card"></i>關於</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://diy99.github.io/papermod/search/" title="搜尋 (Alt &#43; /)" accesskey=/>
+                    <span><i class="fa-brands fa-searchengin"></i>搜尋</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Windows 系統維護
+    </h1>
+    <div class="post-meta">📅&nbsp;<span title='2023-11-27 18:01:57 +0800 CST'>2023-11-27</span>&nbsp;·&nbsp;⏱️&nbsp;4 分鐘&nbsp;·&nbsp;📃&nbsp;1686 字&nbsp;·&nbsp;
+📝&nbsp;Jang
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">文章目錄</span>
+        </summary>
+
+        <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#備份系統前">備份系統前</a>
+      <ul>
+        <li><a href="#清理資源回收筒">清理資源回收筒</a></li>
+        <li><a href="#windows系統優化">Windows系統優化</a></li>
+        <li><a href="#c槽的使用者資料夾改到d槽">C槽的使用者資料夾改到D槽 </a></li>
+        <li><a href="#停止自動更新">停止自動更新 </a></li>
+        <li><a href="#portableappscom平台app">PortableApps.com平台APP </a></li>
+      </ul>
+    </li>
+    <li><a href="#usb開機隨身碟製作">USB開機隨身碟製作</a></li>
+    <li><a href="#硬碟分割與調整工具">硬碟分割與調整工具</a></li>
+    <li><a href="#winpe">WinPE</a>
+      <ul>
+        <li><a href="#diskgenius-製作-winpe">DiskGenius 製作 WinPE</a></li>
+        <li><a href="#easyu---winpe製作工具">EasyU - WinPE製作工具</a></li>
+        <li><a href="#usbox---winpe製作工具">USBOX - WinPE製作工具</a></li>
+        <li><a href="#使用微軟官網資料製作-winpe">使用微軟官網資料製作 WinPE</a></li>
+      </ul>
+    </li>
+    <li><a href="#備份與還原windows作業系統">備份與還原Windows作業系統</a>
+      <ul>
+        <li><a href="#易数一键还原">易数一键还原</a></li>
+        <li><a href="#onekey一键还原">OneKey一键还原</a></li>
+        <li><a href="#easeus-todo-backup-free">EaseUS Todo Backup Free</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>Windows作業系統的維護至關重要，重新安裝是個夢魘，因此也如手機一樣，提供「恢復原廠設定」。無論是重新安裝或恢復原廠設定，都要作Windows系統設定及<span style="color:#FF0000;">備份資料</span>。已停產的 <a href="https://zh.wikipedia.org/zh-tw/%E8%AB%BE%E9%A0%93%E9%AD%85%E5%BD%B1%E7%B3%BB%E7%B5%B1">Norton Ghost</a> 就是解決<span style="color:#FF0000;">惱人</span>的重新<span style="color:#FF0000;">Windows系統設定</span>，作者介紹免費的替代APP。
+<br>相關資料：<a href="https://ofeyhong.pixnet.net/blog/post/215299796">系統還原與重設此電腦</a>、<a href="https://adersaytech.com/tutorial/windowsos-tutorial/how-to-make-winpe.html">WinPE是什麼?</a></p>
+<h2 id="備份系統前">備份系統前<a hidden class="anchor" aria-hidden="true" href="#備份系統前">#</a></h2>
+<h3 id="清理資源回收筒">清理資源回收筒<a hidden class="anchor" aria-hidden="true" href="#清理資源回收筒">#</a></h3>
+<p>資源回收筒會佔用 Windows 系統(C槽)，可用  <a href="https://portableapps.com/apps/utilities/7-zip_portable">7-Zip</a> 查得隱夾資料夾 C:\$Recycle.Bin</p>
+<h3 id="windows系統優化">Windows系統優化<a hidden class="anchor" aria-hidden="true" href="#windows系統優化">#</a></h3>
+<p>不滿意 Windows設定功能的預設，可參閱
+<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> <a href="https://ofeyhong.pixnet.net/blog/post/207887005">【教學】Windows 10 系統優化 </a>
+<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> <a href="https://ofeyhong.pixnet.net/blog/post/225581177">【教學】Windows 11 系統優化</a></p>
+<h3 id="c槽的使用者資料夾改到d槽">C槽的使用者資料夾改到D槽 <a hidden class="anchor" aria-hidden="true" href="#c槽的使用者資料夾改到d槽">#</a></h3>
+<p>使用者資料夾就在C槽，如：放置在桌面的資料夾及檔案…，避免還原系統(C槽)時檔案不見，可參閱
+<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> <a href="https://ofeyhong.pixnet.net/blog/post/222675966">C槽的使用者資料夾改到D槽</a></p>
+<h3 id="停止自動更新">停止自動更新 <a hidden class="anchor" aria-hidden="true" href="#停止自動更新">#</a></h3>
+<p>Windows 自動更新後，系統檔臃腫了，甚至速度變慢了，可參閱
+<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> <a href="https://ess.site.nthu.edu.tw/p/16-1351-152740.php?Lang=zh-tw">關閉Win10自動更新 </a>  (要關閉Win11自動更新，可作參考)</p>
+<h3 id="portableappscom平台app">PortableApps.com平台APP <a hidden class="anchor" aria-hidden="true" href="#portableappscom平台app">#</a></h3>
+<h4 id="wise-program-uninstaller">Wise Program Uninstaller<a hidden class="anchor" aria-hidden="true" href="#wise-program-uninstaller">#</a></h4>
+<p>除了有安全移除軟體模式，更有強制移除模式，特別適合移除無法透過一般的移除方式，或安全移除模式的軟體。</p>
+<h4 id="wise-registry-cleaner">Wise Registry Cleaner<a hidden class="anchor" aria-hidden="true" href="#wise-registry-cleaner">#</a></h4>
+<p>電腦跑得比以前還慢呢？有可能是因為登錄檔的垃圾所導致。這套軟體可以執行登錄檔的掃描及清理，清理前預設還會自動備份登錄檔，還有一鍵系統最佳化、登錄檔重組功能。</p>
+<h4 id="smart-defrag">Smart Defrag<a hidden class="anchor" aria-hidden="true" href="#smart-defrag">#</a></h4>
+<p>磁碟重組可以將分散的檔案，集中在同一區塊，提升磁碟的效能，改善電腦越來越慢。</p>
+<h2 id="usb開機隨身碟製作">USB開機隨身碟製作<a hidden class="anchor" aria-hidden="true" href="#usb開機隨身碟製作">#</a></h2>
+<p>Windows 無法運作或重新安裝時必備
+<br><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i> <a href="https://www.ventoy.net/en/download.html">Ventoy USB開機隨身碟製作</a>，<a href="https://adersaytech.com/tools/practical-software/ventoy-tool-review.html">Ventoy 教學</a>
+<br><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i> <a href="https://portableapps.com/apps/utilities/rufus-portable">Rufus開機隨身碟製作</a>(可用<a href="/papermod/posts/portableapps.com-platform/">PortableApps.com平台</a>安裝)，<a href="https://ofeyhong.pixnet.net/blog/post/225733388">Rufus 教學</a>
+<br><i class="fa-solid fa-book" style="color:#606060;"></i> <a href="https://www.asus.com/tw/support/FAQ/1013017/">如何從USB隨身碟/光碟機中開機</a>
+<br><i class="fa-solid fa-book" style="color:#606060;"></i> <a href="https://ofeyhong.pixnet.net/blog/post/223177146">【教學】如何設定usb隨身碟開機 </a></p>
+<h2 id="硬碟分割與調整工具">硬碟分割與調整工具<a hidden class="anchor" aria-hidden="true" href="#硬碟分割與調整工具">#</a></h2>
+<p>一般而言，只有一顆硬碟而安裝Windows時，就只有C槽。參閱 <a href="/papermod/posts/disk-partition/">硬碟分割與調整工具</a> 增加D槽，以存放可攜式(portable,又稱免安裝)APP及資料。</p>
+<h2 id="winpe">WinPE<a hidden class="anchor" aria-hidden="true" href="#winpe">#</a></h2>
+<p>WinPE 是 Windows Preinstallation Environment 的縮寫(中文 Windows 預先安裝環境)，簡化版的Microsoft Windows，放在一片可直接啟動的CD或DVD光碟或者隨身碟，以載入到記憶體的方式執行，主要用於系統維護。</p>
+<h3 id="diskgenius-製作-winpe">DiskGenius 製作 WinPE<a hidden class="anchor" aria-hidden="true" href="#diskgenius-製作-winpe">#</a></h3>
+<p><i class="fa-solid fa-download" style="color:#008000;"></i> 下載<a href="https://www.diskgenius.cn/download.php">DiskGenius</a> (繁體中文、简体中文)
+<br><i class="fa-solid fa-book" style="color:red;"></i> <a href="https://www.diskgenius.cn/help/createwinpeusb.php">制作DiskGenius WinPE USB启动盘</a> 教程
+<br><i class="fa-solid fa-book" style="color:#606060;"></i> <a href="https://www.diskgenius.cn/help/partresizing.php">DiskGenius 无损分区大小调整</a> 教程
+<br><i class="fa-solid fa-book" style="color:#606060;"></i> <a href="https://www.diskgenius.cn/help/part2file.php">备份分区</a> 教程
+<br><i class="fa-solid fa-book" style="color:#606060;"></i> <a href="https://www.diskgenius.cn/help/restorepart.php">从镜像文件还原分区</a> 教程
+<br><i class="fa-solid fa-bullhorn" style="color:#e55;"></i> 免費，DiskGenius 就可搞定<span style="color:#FF0000;">備份與還原系統</span>及調整分區，可於 Windows 及 WinPE 執行</p>
+<h3 id="easyu---winpe製作工具">EasyU - WinPE製作工具<a hidden class="anchor" aria-hidden="true" href="#easyu---winpe製作工具">#</a></h3>
+<p><i class="fa-solid fa-bullhorn" style="color:#e55;"></i> 參閱 <a href="https://www.itsk.com/thread/379322">EasyU官網FAQ</a> 關閉Defender即時保護
+<br><i class="fa-solid fa-download" style="color:#008000;"></i>下載 <a href="https://www.azofreeware.com/2019/05/easyu.html">EasyU</a>
+<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 開啟 EasyU_v3.7.exe (v3.7是版本號)
+<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 按 [生成鏡像] ➜ [生成鏡像]
+<img loading="lazy" src="https://diii.neocities.org/img/EasyU-01.webp#center" alt=""  />
+
+<i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 按 [確定] ➜ …
+<img loading="lazy" src="https://diii.neocities.org/img/EasyU-02.webp#center" alt=""  />
+
+<i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 開啟Defender即時保護
+<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> Ventoy 製成  USB開機隨身碟
+<br>💾 EasyU 可以備份還原Windows作業系統
+<br><i class="fa-solid fa-book" style="color:#606060;"></i> <a href="https://www.itsk.com/thread/380473">Easy Image X2 快速分区-恢复镜像</a></p>
+<h3 id="usbox---winpe製作工具">USBOX - WinPE製作工具<a hidden class="anchor" aria-hidden="true" href="#usbox---winpe製作工具">#</a></h3>
+<p><i class="fa-solid fa-download" style="color:#008000;"></i> 下載 <a href="https://hsuanthony.pixnet.net/blog">USBOX</a> <span style="color:#FF0000;">ISO</span> 檔
+<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> Ventoy 製成  USB開機隨身碟
+<br>💾 USBOX 可以備份還原Windows作業系統</p>
+<h3 id="使用微軟官網資料製作-winpe">使用微軟官網資料製作 WinPE<a hidden class="anchor" aria-hidden="true" href="#使用微軟官網資料製作-winpe">#</a></h3>
+<p><i class="fa-solid fa-book" style="color:#606060;"></i>
+參閱 <a href="https://blog.shionet.tw/search/label/Windows%20PE">製作屬於自己的WinPE</a> (含 中文/臺灣 語系)
+<br><i class="fa-solid fa-bullhorn" style="color:#e55;"></i> 作者討厭 <a href="https://zh.wikipedia.org/zh-tw/%E7%B9%81%E4%BD%93%E5%AD%97">繁體字</a> 這命名，因為沿用<span style="color:#FF0000;">氾濫</span>。<a href="https://zh.wikipedia.org/zh-tw/%E4%BC%A0%E6%89%BF%E5%AD%97">Traditional Chinese</a> 一詞 Google與Bing 皆翻譯為繁體中文，但 Traditional 是傳統之意。在 Google Chrome 的語言設定，有 英文 - English, <span style="color:#FF0000;">英文(英國)</span> - English(United Kingdom)，中文(繁體), <span style="color:#FF0000;">中文(香港)</span>, 中文(簡体)。中文(繁體)應當是中文(臺灣)，如同 中文(香港)，所有小括號內指的是地區，不是<span style="color:#FF0000;">國家</span>。臺灣與中國大陸使用<span style="color:#FF0000;">相同名詞嗎？</span>電腦術語：臺灣『<span style="color:#FF0000;">檔案</span>』與中国大陆『<span style="color:#FF0000;">文件</span>』🙄。勿作<span style="color:#FF0000;">政治</span>解讀！</p>
+<h2 id="備份與還原windows作業系統">備份與還原Windows作業系統<a hidden class="anchor" aria-hidden="true" href="#備份與還原windows作業系統">#</a></h2>
+<p>Windows系統無法運作時，須要 WinPE 開機，再以<span style="color:#FF0000;">還原系統APP</span>(如：<a href="https://zh.wikipedia.org/zh-tw/%E8%AB%BE%E9%A0%93%E9%AD%85%E5%BD%B1%E7%B3%BB%E7%B5%B1">Norton Ghost</a>)還原Windows作業系統。國外能於 WinPE 執行的還原系統APP，只有付費軟體。</p>
+<h3 id="易数一键还原">易数一键还原<a hidden class="anchor" aria-hidden="true" href="#易数一键还原">#</a></h3>
+<p><i class="fa-solid fa-download" style="color:#008000;"></i> 下載 <a href="https://www.onekeyrestore.cn/">易数一键还原</a>，易數一鍵還原基於 <a href="#diskgenius-%E8%A3%BD%E4%BD%9C-winpe">DiskGenius</a> 内核開發
+<br><i class="fa-solid fa-book" style="color:#606060;"></i> 
+<a href="https://ofeyhong.pixnet.net/blog/post/224324025">【教學】如何安裝易數一鍵還原</a>
+<br><i class="fa-solid fa-book" style="color:#606060;"></i> 
+<a href="https://ofeyhong.pixnet.net/blog/post/214511678">易數一鍵還原／操作說明</a>
+<br><i class="fa-solid fa-bullhorn" style="color:#e55;"></i> 隱藏檔可用 <a href="https://portableapps.com/apps/utilities/7-zip_portable">7-Zip</a> 檢視，於 <a href="/papermod/posts/app-folder/#%E9%96%8B%E5%95%9Fcmd">cmd</a> 可用 <a href="https://chtouch.com/1311/">attrib 隱藏檔案或資料夾</a>
+<br><i class="fa-solid fa-bullhorn" style="color:#e55;"></i> 免費，可於 Windows 及 WinPE 執行。複製 C:\Program Files\易數一鍵還原 資科夾 至 D:\App 資科夾內，以防C槽毀損。</p>
+<h3 id="onekey一键还原">OneKey一键还原<a hidden class="anchor" aria-hidden="true" href="#onekey一键还原">#</a></h3>
+<p><i class="fa-solid fa-download" style="color:#008000;"></i> 下載 <a href="http://www.onekey123.com/ghost.html">OneKey一键还原</a>
+<br><i class="fa-solid fa-bullhorn" style="color:#e55;"></i> 以 Norton Ghost 為基礎，此版本乎太舊了</p>
+<h3 id="easeus-todo-backup-free">EaseUS Todo Backup Free<a hidden class="anchor" aria-hidden="true" href="#easeus-todo-backup-free">#</a></h3>
+<p><i class="fa-solid fa-download" style="color:#008000;"></i> 下載 <a href="https://tw.easeus.com/backup-software/todo-backup-free.html">EaseUS Todo Backup Free</a>
+<br><i class="fa-solid fa-book" style="color:#606060;"></i> <a href="https://tw.easeus.com/backup-recovery/backup-and-restore-data.html">硬碟備份 — 備份所有內容 - EaseUS</a>
+<br><i class="fa-solid fa-bullhorn" style="color:#e55;"></i> 只能於 Windows 執行，要在 WinPE 執行，須升級付費版。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://diy99.github.io/papermod/tags/windows%E7%B3%BB%E7%B5%B1%E7%B6%AD%E8%AD%B7/">Windows系統維護</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://diy99.github.io/papermod/posts/hugo-papermod/">
+    <span class="title">« 上一頁</span>
+    <br>
+    <span>📌 Hugo PaperMod 與 GitHub Pages</span>
+  </a>
+  <a class="next" href="https://diy99.github.io/papermod/posts/portableapps.com-platform/">
+    <span class="title">下一頁 »</span>
+    <br>
+    <span>PortableApps.com Platform</span>
+  </a>
+</nav>
+
+
+<div style="font-size: 32px; font-weight: bold;">✏️留言板<sup><span data-cusdis-count-page-id="34519af51b8d8d8bfa46cc662d44e1fe"  style="font-size: 22px;color: #E95413;">0</span></sup> - Comments<sup><span data-cusdis-count-page-id="34519af51b8d8d8bfa46cc662d44e1fe"  style="font-size: 22px;color: #E95413;">0</span></sup></div>
+<script defer data-host="https://cusdis.com" data-app-id="03b773f6-bc48-47d6-b4a5-3452554ff3d2" src="https://cusdis.com/js/cusdis-count.umd.js"></script>
+<div id="cusdis_thread" style="background-color:lightblue;border-style: ridge;border-color: #D2691E;"
+  data-host="https://cusdis.com"
+  data-app-id="03b773f6-bc48-47d6-b4a5-3452554ff3d2"
+  data-page-id="34519af51b8d8d8bfa46cc662d44e1fe"
+  data-page-url="https://diy99.github.io/papermod/posts/windows-tool/"
+  data-page-title="Windows 系統維護"></div>
+<script defer src="/papermod/js/zh-tw.js"></script>
+<script defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+  </footer>
+</article>
+    </main>
+    <div style="text-align: center;">
+    <div class="social-icons">
+    <a href="mailto:simplelogin-newsletter.left483@simplelogin.com" target="_blank" rel="noopener noreferrer me" title="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+    <polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+    </a>
+    <a href="https://github.com/diy99" target="_blank" rel="noopener noreferrer me" title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
+</div>
+
+</div>
+<footer class="footer">
+    <span class="copyright">非營利情況下都可以引用或轉載本站文章，不過請註明出處！😉</span><br>
+    <span>&copy; 2023 <a href="https://diy99.github.io/papermod/">DIY 99</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+		
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '複製';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已複製！';
+            setTimeout(() => {
+                copybutton.innerHTML = '複製';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

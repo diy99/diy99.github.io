@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 17 Nov 2023 06:08:45 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Nov 2023 18:01:57 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>📌 Hugo PaperMod 與 GitHub Pages</title>
       <link>https://diy99.github.io/papermod/posts/hugo-papermod/</link>
@@ -19,6 +19,15 @@
       
       <guid>https://diy99.github.io/papermod/posts/hugo-papermod/</guid>
       <description>本文更新日期: 2023-11-01 Hugo特色 Hugo 是用 Go 編寫的靜態網站生成器，一般只需幾秒鐘就能生成一個網站，被稱為「世界上最快的網站構建框架」，也使 Hugo 大受歡迎</description>
+    </item>
+    
+    <item>
+      <title>Windows 系統維護</title>
+      <link>https://diy99.github.io/papermod/posts/windows-tool/</link>
+      <pubDate>Mon, 27 Nov 2023 18:01:57 +0800</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/windows-tool/</guid>
+      <description>Windows作業系統的維護至關重要，重新安裝是個夢魘，因此也如手機一樣，提供「恢復原廠設定」。無論是重新安裝或恢復原廠設定，都要作Wind</description>
     </item>
     
     <item>
@@ -164,7 +173,7 @@
       <pubDate>Mon, 18 Sep 2023 19:28:15 +0800</pubDate>
       
       <guid>https://diy99.github.io/papermod/posts/disk-partition/</guid>
-      <description>一般而言，安裝Windows時，就只有C槽。硬碟分割與調整工具可以增加D槽以存放可攜式(portable,又稱免安裝)程式及資料，我的Win</description>
+      <description>一般而言，安裝Windows時，就只有C槽。硬碟分割與調整工具可以增加D槽以存放可攜式(portable,又稱免安裝)程式及資料，作者的Wi</description>
     </item>
     
   </channel>
