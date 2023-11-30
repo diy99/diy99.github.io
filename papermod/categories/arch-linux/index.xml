@@ -48,5 +48,14 @@
       <description>先完成 Arch Linux Base Install - 基礎安裝 官網LXQt，作者 bash 檔 lxqt.txt 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46</description>
     </item>
     
+    <item>
+      <title>Audacious 音樂播放</title>
+      <link>https://diy99.github.io/papermod/posts/audacious/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/audacious/</guid>
+      <description>Audacious 的介面大致模仿了Foobar2000，跨平臺APP。 於 Arch Linux 安裝 pacman -S audacious 於其它作業系統的安裝，可參閱 Download Audacious 因為 Arch Linux 大部分桌面預設安裝 PulseAudio 聲音伺服器</description>
+    </item>
+    
   </channel>
 </rss>

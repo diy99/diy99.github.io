@@ -186,6 +186,15 @@
 保留測試文章動畫留念 </description>
     </item>
     
+    <item>
+      <title>Audacious 音樂播放</title>
+      <link>https://diy99.github.io/papermod/posts/audacious/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/audacious/</guid>
+      <description>Audacious 的介面大致模仿了Foobar2000，跨平臺APP。 於 Arch Linux 安裝 pacman -S audacious 於其它作業系統的安裝，可參閱 Download Audacious 因為 Arch Linux 大部分桌面預設安裝 PulseAudio 聲音伺服器</description>
+    </item>
+    
     
     
   </channel>
