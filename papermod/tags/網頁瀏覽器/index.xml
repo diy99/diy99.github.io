@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>網頁瀏覽器 on DIY 99</title>
+    <link>https://diy99.github.io/papermod/tags/%E7%B6%B2%E9%A0%81%E7%80%8F%E8%A6%BD%E5%99%A8/</link>
+    <description>Recent content in 網頁瀏覽器 on DIY 99</description>
+    <image>
+      <title>DIY 99</title>
+      <url>https://diy99.github.io/papermod/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://diy99.github.io/papermod/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Fri, 01 Dec 2023 07:54:54 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/tags/%E7%B6%B2%E9%A0%81%E7%80%8F%E8%A6%BD%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Firefox與Chrome網頁瀏覽器</title>
+      <link>https://diy99.github.io/papermod/posts/web-browser/</link>
+      <pubDate>Fri, 01 Dec 2023 07:54:54 +0800</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/web-browser/</guid>
+      <description>網頁瀏覽器(Web Browser，常簡稱為瀏覽器)是用於存取全球資訊網(World Wide Web，簡稱 WWW 或 Web)資訊系統的應用程式，這些資訊可為</description>
+    </item>
+    
+  </channel>
+</rss>

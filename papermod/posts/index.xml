@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 27 Nov 2023 18:01:57 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Dec 2023 07:54:54 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>📌 Hugo PaperMod 與 GitHub Pages</title>
       <link>https://diy99.github.io/papermod/posts/hugo-papermod/</link>
@@ -19,6 +19,15 @@
       
       <guid>https://diy99.github.io/papermod/posts/hugo-papermod/</guid>
       <description>本文更新日期: 2023-11-01 Hugo特色 Hugo 是用 Go 編寫的靜態網站生成器，一般只需幾秒鐘就能生成一個網站，被稱為「世界上最快的網站構建框架」，也使 Hugo 大受歡迎</description>
+    </item>
+    
+    <item>
+      <title>Firefox與Chrome網頁瀏覽器</title>
+      <link>https://diy99.github.io/papermod/posts/web-browser/</link>
+      <pubDate>Fri, 01 Dec 2023 07:54:54 +0800</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/web-browser/</guid>
+      <description>網頁瀏覽器(Web Browser，常簡稱為瀏覽器)是用於存取全球資訊網(World Wide Web，簡稱 WWW 或 Web)資訊系統的應用程式，這些資訊可為</description>
     </item>
     
     <item>

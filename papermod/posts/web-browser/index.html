@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Firefox與Chrome網頁瀏覽器 | DIY 99</title>
+<meta name="keywords" content="網頁瀏覽器">
+<meta name="description" content="網頁瀏覽器(Web Browser，常簡稱為瀏覽器)是用於存取全球資訊網(World Wide Web，簡稱 WWW 或 Web)資訊系統的應用程式，這些資訊可為">
+<meta name="author" content="
+📝&nbsp;Jang">
+<link rel="canonical" href="https://diy99.github.io/papermod/posts/web-browser/">
+<link crossorigin="anonymous" href="/papermod/assets/css/stylesheet.3c60e760117cf9a58814f8b11b3a6eaab6e30a69288e84083ebdc2422084f9e4.css" integrity="sha256-PGDnYBF8&#43;aWIFPixGzpuqrbjCmkojoQIPr3CQiCE&#43;eQ=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/papermod/assets/js/highlight.acb54fd32bbc1982428b8850317e45d076b95012730a5936667e6bc21777692a.js" integrity="sha256-rLVP0yu8GYJCi4hQMX5F0Ha5UBJzClk2Zn5rwhd3aSo="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://diy99.github.io/papermod/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://diy99.github.io/papermod/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://diy99.github.io/papermod/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://diy99.github.io/papermod/apple-touch-icon.png">
+<link rel="mask-icon" href="https://diy99.github.io/papermod/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link href="https://fonts.googleapis.com/css2?family=Oswald&family=Noto+Sans+TC&family=Noto+Sans+SC&family=Noto+Serif+TC:wght@500;700&family=Noto+Serif+SC:wght@500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><meta property="og:title" content="Firefox與Chrome網頁瀏覽器" />
+<meta property="og:description" content="網頁瀏覽器(Web Browser，常簡稱為瀏覽器)是用於存取全球資訊網(World Wide Web，簡稱 WWW 或 Web)資訊系統的應用程式，這些資訊可為" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://diy99.github.io/papermod/posts/web-browser/" /><meta property="og:image" content="https://diy99.github.io/papermod/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-12-01T07:54:54+08:00" />
+<meta property="article:modified_time" content="2023-12-01T07:54:54+08:00" /><meta property="og:site_name" content="DIY 99" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://diy99.github.io/papermod/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
+
+<meta name="twitter:title" content="Firefox與Chrome網頁瀏覽器"/>
+<meta name="twitter:description" content="網頁瀏覽器(Web Browser，常簡稱為瀏覽器)是用於存取全球資訊網(World Wide Web，簡稱 WWW 或 Web)資訊系統的應用程式，這些資訊可為"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "文章",
+      "item": "https://diy99.github.io/papermod/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Firefox與Chrome網頁瀏覽器",
+      "item": "https://diy99.github.io/papermod/posts/web-browser/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Firefox與Chrome網頁瀏覽器",
+  "name": "Firefox與Chrome網頁瀏覽器",
+  "description": "網頁瀏覽器(Web Browser，常簡稱為瀏覽器)是用於存取全球資訊網(World Wide Web，簡稱 WWW 或 Web)資訊系統的應用程式，這些資訊可為",
+  "keywords": [
+    "網頁瀏覽器"
+  ],
+  "articleBody": "網頁瀏覽器(Web Browser，常簡稱為瀏覽器)是用於存取全球資訊網(World Wide Web，簡稱 WWW 或 Web)資訊系統的應用程式，這些資訊可為網頁、圖片、影音或其他內容。 建議於 PortableApps.com平臺 安裝 Firefox、Chrome (跨平臺APP) 相關資訊 - https://diii.neocities.org/webvideo/browser\nFirefox 惱人廣告是觀賞網路影片的夢魘，安裝 uBlock Origin 可阻擋大部分廣告。 擴充套件取得影片網址 .m3u8，於影音播放器播放 The Stream Detector HLS Downloader\nChrome 惱人廣告是觀賞網路影片的夢魘，安裝 uBlock Origin 可阻擋大部分廣告。 擴充功能取得影片網址 .m3u8，於影音播放器播放 CocoCut Stream Recorder (只能下載影片) HLS Downloader 擴充功能LINE網頁版\n",
+  "wordCount" : "270",
+  "inLanguage": "zh-tw",
+  "datePublished": "2023-12-01T07:54:54+08:00",
+  "dateModified": "2023-12-01T07:54:54+08:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Jang"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://diy99.github.io/papermod/posts/web-browser/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DIY 99",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://diy99.github.io/papermod/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://diy99.github.io/papermod/" accesskey="h" title="DIY99🏡 (Alt + H)">DIY99🏡</a>
+            <div class="logo-switches">
+				<button id="theme-toggle" accesskey="t" title="(Alt + T)">
+				    <span id="moon">🌙</span>
+					<span id="sun">🌞</span>
+				</button>
+				
+				
+				
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://diy99.github.io/papermod/archives/" title="歸檔">
+                    <span><i class="fa-solid fa-boxes-packing"></i>歸檔</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://diy99.github.io/papermod/categories/" title="分類">
+                    <span><i class="fa-solid fa-shuffle"></i>分類</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://diy99.github.io/papermod/tags/" title="標籤">
+                    <span><i class="fa-solid fa-tags"></i>標籤</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://diy99.github.io/papermod/about/" title="關於">
+                    <span><i class="fa-solid fa-address-card"></i>關於</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://diy99.github.io/papermod/search/" title="搜尋 (Alt &#43; /)" accesskey=/>
+                    <span><i class="fa-brands fa-searchengin"></i>搜尋</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Firefox與Chrome網頁瀏覽器
+    </h1>
+    <div class="post-meta">📅&nbsp;<span title='2023-12-01 07:54:54 +0800 CST'>2023-12-01</span>&nbsp;·&nbsp;⏱️&nbsp;1 分鐘&nbsp;·&nbsp;📃&nbsp;270 字&nbsp;·&nbsp;
+📝&nbsp;Jang
+
+</div>
+  </header> 
+  <div class="post-content"><p>網頁瀏覽器(Web Browser，常簡稱為瀏覽器)是用於存取全球資訊網(World Wide Web，簡稱 WWW 或 Web)資訊系統的應用程式，這些資訊可為網頁、圖片、影音或其他內容。
+<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 建議於 <a href="/papermod/posts/portableapps.com-platform/">PortableApps.com平臺</a> 安裝 Firefox、Chrome (跨平臺APP)
+<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 相關資訊 - <a href="https://diii.neocities.org/webvideo/browser">https://diii.neocities.org/webvideo/browser</a></p>
+<h2 id="firefox">Firefox<a hidden class="anchor" aria-hidden="true" href="#firefox">#</a></h2>
+<p><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 惱人廣告是觀賞網路影片的夢魘，安裝 <a href="https://addons.mozilla.org/zh-TW/firefox/addon/ublock-origin/">uBlock Origin</a> 可阻擋大部分廣告。
+<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 擴充套件取得影片網址 .m3u8，於影音播放器播放
+<br><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i> <a href="https://addons.mozilla.org/zh-TW/firefox/addon/hls-stream-detector/">The Stream Detector</a>
+<br><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i> <a href="https://addons.mozilla.org/zh-TW/firefox/addon/hls-downloader-extension/">HLS Downloader</a></p>
+<h2 id="chrome">Chrome<a hidden class="anchor" aria-hidden="true" href="#chrome">#</a></h2>
+<p><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 惱人廣告是觀賞網路影片的夢魘，安裝 <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin</a> 可阻擋大部分廣告。
+<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 擴充功能取得影片網址 .m3u8，於影音播放器播放
+<br><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i> <a href="https://chrome.google.com/webstore/detail/video-downloader-cococut/gddbgllpilhpnjpkdbopahnpealaklle">CocoCut</a>
+<br><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i> <a href="https://chrome.google.com/webstore/detail/stream-recorder-download/iogidnfllpdhagebkblkgbfijkbkjdmm">Stream Recorder</a> (只能下載影片)
+<br><i class="fa-regular fa-bookmark" style="color:#D2691E;"></i> <a href="https://chrome.google.com/webstore/detail/hls-downloader/hkbifmjmkohpemgdkknlbgmnpocooogp">HLS Downloader</a>
+<br><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 擴充功能<a href="https://chromewebstore.google.com/detail/line/ophjlpahpchlmihnnnihgmmeilfjmjjc?utm_source=ext_app_menu"><span style="font-weight:bold;color:#00B800;">LINE</span>網頁版</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://diy99.github.io/papermod/tags/%E7%B6%B2%E9%A0%81%E7%80%8F%E8%A6%BD%E5%99%A8/">網頁瀏覽器</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://diy99.github.io/papermod/posts/hugo-papermod/">
+    <span class="title">« 上一頁</span>
+    <br>
+    <span>📌 Hugo PaperMod 與 GitHub Pages</span>
+  </a>
+  <a class="next" href="https://diy99.github.io/papermod/posts/windows-tool/">
+    <span class="title">下一頁 »</span>
+    <br>
+    <span>Windows 系統維護</span>
+  </a>
+</nav>
+
+
+<div style="font-size: 32px; font-weight: bold;">✏️留言板<sup><span data-cusdis-count-page-id="90d93f6f06e3870499ebfae294b859ce"  style="font-size: 22px;color: #E95413;">0</span></sup> - Comments<sup><span data-cusdis-count-page-id="90d93f6f06e3870499ebfae294b859ce"  style="font-size: 22px;color: #E95413;">0</span></sup></div>
+<script defer data-host="https://cusdis.com" data-app-id="03b773f6-bc48-47d6-b4a5-3452554ff3d2" src="https://cusdis.com/js/cusdis-count.umd.js"></script>
+<div id="cusdis_thread" style="background-color:lightblue;border-style: ridge;border-color: #D2691E;"
+  data-host="https://cusdis.com"
+  data-app-id="03b773f6-bc48-47d6-b4a5-3452554ff3d2"
+  data-page-id="90d93f6f06e3870499ebfae294b859ce"
+  data-page-url="https://diy99.github.io/papermod/posts/web-browser/"
+  data-page-title="Firefox與Chrome網頁瀏覽器"></div>
+<script defer src="/papermod/js/zh-tw.js"></script>
+<script defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+  </footer>
+</article>
+    </main>
+    <div style="text-align: center;">
+    <div class="social-icons">
+    <a href="mailto:simplelogin-newsletter.left483@simplelogin.com" target="_blank" rel="noopener noreferrer me" title="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+    <polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+    </a>
+    <a href="https://github.com/diy99" target="_blank" rel="noopener noreferrer me" title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
+</div>
+
+</div>
+<footer class="footer">
+    <span class="copyright">非營利情況下都可以引用或轉載本站文章，不過請註明出處！😉</span><br>
+    <span>&copy; 2023 <a href="https://diy99.github.io/papermod/">DIY 99</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+		
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '複製';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已複製！';
+            setTimeout(() => {
+                copybutton.innerHTML = '複製';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
