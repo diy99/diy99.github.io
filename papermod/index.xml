@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 01 Dec 2023 07:54:54 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Dec 2023 11:21:38 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>📌 Hugo PaperMod 與 GitHub Pages</title>
       <link>https://diy99.github.io/papermod/posts/hugo-papermod/</link>
@@ -19,6 +19,15 @@
       
       <guid>https://diy99.github.io/papermod/posts/hugo-papermod/</guid>
       <description>本文更新日期: 2023-11-01 Hugo特色 Hugo 是用 Go 編寫的靜態網站生成器，一般只需幾秒鐘就能生成一個網站，被稱為「世界上最快的網站構建框架」，也使 Hugo 大受歡迎</description>
+    </item>
+    
+    <item>
+      <title>自製可攜式(免安裝) PotPlayer</title>
+      <link>https://diy99.github.io/papermod/posts/media-player/</link>
+      <pubDate>Thu, 07 Dec 2023 11:21:38 +0800</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/media-player/</guid>
+      <description>影音播放器(Media Player)是專為播放影片打造的APP，以瀏覽器播放影片，效果難免略遜一籌，但須要瀏覽器偵測影片網址(安裝擴充套件)</description>
     </item>
     
     <item>
