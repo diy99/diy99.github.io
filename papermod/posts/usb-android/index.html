@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Arch Linux 和 Android 裝置之間傳輸檔案  | DIY 99</title>
+<meta name="keywords" content="">
+<meta name="description" content="Windows 電腦和 Android 裝置之間以 USB 傳輸檔案，可參閱 在電腦和Android 裝置之間傳輸檔案。作者參閱 Media Transfer Protocol 與 连接Android手机到ArchLinux上，">
+<meta name="author" content="
+📝&nbsp;Jang">
+<link rel="canonical" href="https://diy99.github.io/papermod/posts/usb-android/">
+<link crossorigin="anonymous" href="/papermod/assets/css/stylesheet.3c60e760117cf9a58814f8b11b3a6eaab6e30a69288e84083ebdc2422084f9e4.css" integrity="sha256-PGDnYBF8&#43;aWIFPixGzpuqrbjCmkojoQIPr3CQiCE&#43;eQ=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/papermod/assets/js/highlight.acb54fd32bbc1982428b8850317e45d076b95012730a5936667e6bc21777692a.js" integrity="sha256-rLVP0yu8GYJCi4hQMX5F0Ha5UBJzClk2Zn5rwhd3aSo="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://diy99.github.io/papermod/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://diy99.github.io/papermod/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://diy99.github.io/papermod/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://diy99.github.io/papermod/apple-touch-icon.png">
+<link rel="mask-icon" href="https://diy99.github.io/papermod/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link href="https://fonts.googleapis.com/css2?family=Oswald&family=Noto+Sans+TC&family=Noto+Sans+SC&family=Noto+Serif+TC:wght@500;700&family=Noto+Serif+SC:wght@500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><meta property="og:title" content="Arch Linux 和 Android 裝置之間傳輸檔案 " />
+<meta property="og:description" content="Windows 電腦和 Android 裝置之間以 USB 傳輸檔案，可參閱 在電腦和Android 裝置之間傳輸檔案。作者參閱 Media Transfer Protocol 與 连接Android手机到ArchLinux上，" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://diy99.github.io/papermod/posts/usb-android/" /><meta property="og:image" content="https://diy99.github.io/papermod/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-12-09T20:48:51+08:00" />
+<meta property="article:modified_time" content="2023-12-09T20:48:51+08:00" /><meta property="og:site_name" content="DIY 99" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://diy99.github.io/papermod/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
+
+<meta name="twitter:title" content="Arch Linux 和 Android 裝置之間傳輸檔案 "/>
+<meta name="twitter:description" content="Windows 電腦和 Android 裝置之間以 USB 傳輸檔案，可參閱 在電腦和Android 裝置之間傳輸檔案。作者參閱 Media Transfer Protocol 與 连接Android手机到ArchLinux上，"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "文章",
+      "item": "https://diy99.github.io/papermod/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Arch Linux 和 Android 裝置之間傳輸檔案 ",
+      "item": "https://diy99.github.io/papermod/posts/usb-android/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Arch Linux 和 Android 裝置之間傳輸檔案 ",
+  "name": "Arch Linux 和 Android 裝置之間傳輸檔案 ",
+  "description": "Windows 電腦和 Android 裝置之間以 USB 傳輸檔案，可參閱 在電腦和Android 裝置之間傳輸檔案。作者參閱 Media Transfer Protocol 與 连接Android手机到ArchLinux上，",
+  "keywords": [
+    
+  ],
+  "articleBody": "Windows 電腦和 Android 裝置之間以 USB 傳輸檔案，可參閱 在電腦和Android 裝置之間傳輸檔案。作者參閱 Media Transfer Protocol 與 连接Android手机到ArchLinux上，整理 Arch Linux 和 Android 裝置之間以 USB 輕易傳輸檔案。\n安裝 MTPfs 與 Android File Transfer\nsudo pacman -Sy mtpfs android-file-transfer 建立 ~/tmp 目錄，掛載手機至 ~/tmp (如果要自動掛載，此步驟可不作)\nmkdir ~/tmp aft-mtp-mount ~/tmp 例如開啟檔案管理員 pcmanfm-qt 缷載\nfusermount -u ~/tmp 安裝 gvfs-mtp 自動掛載 (可能需要重新開機)\nsudo pacman -Sy gvfs-mtp ",
+  "wordCount" : "169",
+  "inLanguage": "zh-tw",
+  "datePublished": "2023-12-09T20:48:51+08:00",
+  "dateModified": "2023-12-09T20:48:51+08:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Jang"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://diy99.github.io/papermod/posts/usb-android/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DIY 99",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://diy99.github.io/papermod/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://diy99.github.io/papermod/" accesskey="h" title="DIY99🏡 (Alt + H)">DIY99🏡</a>
+            <div class="logo-switches">
+				<button id="theme-toggle" accesskey="t" title="(Alt + T)">
+				    <span id="moon">🌙</span>
+					<span id="sun">🌞</span>
+				</button>
+				
+				
+				
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://diy99.github.io/papermod/archives/" title="歸檔">
+                    <span><i class="fa-solid fa-boxes-packing"></i>歸檔</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://diy99.github.io/papermod/categories/" title="分類">
+                    <span><i class="fa-solid fa-shuffle"></i>分類</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://diy99.github.io/papermod/tags/" title="標籤">
+                    <span><i class="fa-solid fa-tags"></i>標籤</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://diy99.github.io/papermod/about/" title="關於">
+                    <span><i class="fa-solid fa-address-card"></i>關於</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://diy99.github.io/papermod/search/" title="搜尋 (Alt &#43; /)" accesskey=/>
+                    <span><i class="fa-brands fa-searchengin"></i>搜尋</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Arch Linux 和 Android 裝置之間傳輸檔案 
+    </h1>
+    <div class="post-meta">📅&nbsp;<span title='2023-12-09 20:48:51 +0800 CST'>2023-12-09</span>&nbsp;·&nbsp;⏱️&nbsp;1 分鐘&nbsp;·&nbsp;📃&nbsp;169 字&nbsp;·&nbsp;
+📝&nbsp;Jang
+
+</div>
+  </header> 
+  <div class="post-content"><p>Windows 電腦和 Android 裝置之間以 USB 傳輸檔案，可參閱 <a href="https://support.google.com/android/answer/9064445?hl=zh-Hant#zippy=%2Cwindows-%E9%9B%BB%E8%85%A6%2Cmac-%E9%9B%BB%E8%85%A6">在電腦和Android 裝置之間傳輸檔案</a>。作者參閱 <a href="https://wiki.archlinux.org/title/Media_Transfer_Protocol">Media Transfer Protocol</a> 與 <a href="http://blog.lujun9972.win/blog/2018/03/09/%E8%BF%9E%E6%8E%A5android%E6%89%8B%E6%9C%BA%E5%88%B0archlinux%E4%B8%8A/index.html">连接Android手机到ArchLinux上</a>，整理 Arch Linux 和 Android 裝置之間以 USB 輕易傳輸檔案。</p>
+<p><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 安裝 MTPfs 與 Android File Transfer</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo pacman -Sy mtpfs android-file-transfer
+</span></span></code></pre></div><p><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 建立 ~/tmp 目錄，掛載手機至 ~/tmp (如果要<span style="color:#FF0000;">自動掛載</span>，此步驟可不作)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">mkdir ~/tmp
+</span></span><span class="line"><span class="cl">aft-mtp-mount ~/tmp
+</span></span></code></pre></div><p>例如開啟檔案管理員 pcmanfm-qt
+<img loading="lazy" src="https://diii.neocities.org/img/android1.webp#center" alt=""  />
+
+缷載</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">fusermount -u ~/tmp
+</span></span></code></pre></div><p><i class="fa-brands fa-canadian-maple-leaf" style="color:#008000;"></i> 安裝 gvfs-mtp 自動掛載 (可能需要<span style="color:#FF0000;">重新開機</span>)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo pacman -Sy gvfs-mtp
+</span></span></code></pre></div><p><img loading="lazy" src="https://diii.neocities.org/img/android2.webp#center" alt=""  />
+</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://diy99.github.io/papermod/posts/hugo-papermod/">
+    <span class="title">« 上一頁</span>
+    <br>
+    <span>📌 Hugo PaperMod 與 GitHub Pages</span>
+  </a>
+  <a class="next" href="https://diy99.github.io/papermod/posts/media-player/">
+    <span class="title">下一頁 »</span>
+    <br>
+    <span>自製可攜式(免安裝) PotPlayer</span>
+  </a>
+</nav>
+
+
+<div style="font-size: 32px; font-weight: bold;">✏️留言板<sup><span data-cusdis-count-page-id="49dbc12c82a1fec1a92cbd3ea7a62e07"  style="font-size: 22px;color: #E95413;">0</span></sup> - Comments<sup><span data-cusdis-count-page-id="49dbc12c82a1fec1a92cbd3ea7a62e07"  style="font-size: 22px;color: #E95413;">0</span></sup></div>
+<script defer data-host="https://cusdis.com" data-app-id="03b773f6-bc48-47d6-b4a5-3452554ff3d2" src="https://cusdis.com/js/cusdis-count.umd.js"></script>
+<div id="cusdis_thread" style="background-color:lightblue;border-style: ridge;border-color: #D2691E;"
+  data-host="https://cusdis.com"
+  data-app-id="03b773f6-bc48-47d6-b4a5-3452554ff3d2"
+  data-page-id="49dbc12c82a1fec1a92cbd3ea7a62e07"
+  data-page-url="https://diy99.github.io/papermod/posts/usb-android/"
+  data-page-title="Arch Linux 和 Android 裝置之間傳輸檔案 "></div>
+<script defer src="/papermod/js/zh-tw.js"></script>
+<script defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+  </footer>
+</article>
+    </main>
+    <div style="text-align: center;">
+    <div class="social-icons">
+    <a href="mailto:simplelogin-newsletter.left483@simplelogin.com" target="_blank" rel="noopener noreferrer me" title="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+    <polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+    </a>
+    <a href="https://github.com/diy99" target="_blank" rel="noopener noreferrer me" title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
+</div>
+
+</div>
+<footer class="footer">
+    <span class="copyright">非營利情況下都可以引用或轉載本站文章，不過請註明出處！😉</span><br>
+    <span>&copy; 2023 <a href="https://diy99.github.io/papermod/">DIY 99</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+		
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '複製';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已複製！';
+            setTimeout(() => {
+                copybutton.innerHTML = '複製';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

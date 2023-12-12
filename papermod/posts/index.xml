@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 07 Dec 2023 11:21:38 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Dec 2023 20:48:51 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>📌 Hugo PaperMod 與 GitHub Pages</title>
       <link>https://diy99.github.io/papermod/posts/hugo-papermod/</link>
@@ -19,6 +19,15 @@
       
       <guid>https://diy99.github.io/papermod/posts/hugo-papermod/</guid>
       <description>本文更新日期: 2023-11-01 Hugo特色 Hugo 是用 Go 編寫的靜態網站生成器，一般只需幾秒鐘就能生成一個網站，被稱為「世界上最快的網站構建框架」，也使 Hugo 大受歡迎</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux 和 Android 裝置之間傳輸檔案 </title>
+      <link>https://diy99.github.io/papermod/posts/usb-android/</link>
+      <pubDate>Sat, 09 Dec 2023 20:48:51 +0800</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/usb-android/</guid>
+      <description>Windows 電腦和 Android 裝置之間以 USB 傳輸檔案，可參閱 在電腦和Android 裝置之間傳輸檔案。作者參閱 Media Transfer Protocol 與 连接Android手机到ArchLinux上，</description>
     </item>
     
     <item>

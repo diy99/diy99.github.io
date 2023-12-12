@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 13 Nov 2023 06:05:39 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/categories/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Dec 2023 20:48:51 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/categories/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux 和 Android 裝置之間傳輸檔案 </title>
+      <link>https://diy99.github.io/papermod/posts/usb-android/</link>
+      <pubDate>Sat, 09 Dec 2023 20:48:51 +0800</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/usb-android/</guid>
+      <description>Windows 電腦和 Android 裝置之間以 USB 傳輸檔案，可參閱 在電腦和Android 裝置之間傳輸檔案。作者參閱 Media Transfer Protocol 與 连接Android手机到ArchLinux上，</description>
+    </item>
+    
     <item>
       <title>Arch Linux KDE 安裝&#43;SDDM自動登入&#43;Fcitx5輸入法</title>
       <link>https://diy99.github.io/papermod/posts/kde/</link>
