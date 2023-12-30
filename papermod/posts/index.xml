@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 15 Dec 2023 17:44:31 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Dec 2023 17:48:01 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>📌 Hugo PaperMod 與 GitHub Pages</title>
       <link>https://diy99.github.io/papermod/posts/hugo-papermod/</link>
@@ -19,6 +19,15 @@
       
       <guid>https://diy99.github.io/papermod/posts/hugo-papermod/</guid>
       <description>本文更新日期: 2023-11-01 Hugo特色 Hugo 是用 Go 編寫的靜態網站生成器，一般只需幾秒鐘就能生成一個網站，被稱為「世界上最快的網站構建框架」，也使 Hugo 大受歡迎</description>
+    </item>
+    
+    <item>
+      <title>Windows 與 Arch Linux 雙系統</title>
+      <link>https://diy99.github.io/papermod/posts/dual-boot/</link>
+      <pubDate>Sat, 30 Dec 2023 17:48:01 +0800</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/dual-boot/</guid>
+      <description>因作者的電腦 HDMI 電視時，Windows 顯示卡驅動程式卻無法取得最佳更新。Arch Linux 顯示卡驅動程式讓作者驚艷，大嘆好美的畫質！於是安裝雙系統。 建</description>
     </item>
     
     <item>

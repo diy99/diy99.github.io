@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 15 Dec 2023 17:44:31 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/categories/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Dec 2023 17:48:01 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/categories/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows 與 Arch Linux 雙系統</title>
+      <link>https://diy99.github.io/papermod/posts/dual-boot/</link>
+      <pubDate>Sat, 30 Dec 2023 17:48:01 +0800</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/dual-boot/</guid>
+      <description>因作者的電腦 HDMI 電視時，Windows 顯示卡驅動程式卻無法取得最佳更新。Arch Linux 顯示卡驅動程式讓作者驚艷，大嘆好美的畫質！於是安裝雙系統。 建</description>
+    </item>
+    
     <item>
       <title>Arch Linux smartmontools  硬碟健康檢查</title>
       <link>https://diy99.github.io/papermod/posts/smartmontools/</link>
