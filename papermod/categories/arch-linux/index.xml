@@ -11,14 +11,14 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 30 Dec 2023 17:48:01 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/categories/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Jan 2024 06:30:39 +0800</lastBuildDate><atom:link href="https://diy99.github.io/papermod/categories/arch-linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Windows 與 Arch Linux 雙系統</title>
-      <link>https://diy99.github.io/papermod/posts/dual-boot/</link>
-      <pubDate>Sat, 30 Dec 2023 17:48:01 +0800</pubDate>
+      <title>[bash] Arch Linux Base Install - 基礎安裝</title>
+      <link>https://diy99.github.io/papermod/posts/archlinux-base-install/</link>
+      <pubDate>Thu, 11 Jan 2024 06:30:39 +0800</pubDate>
       
-      <guid>https://diy99.github.io/papermod/posts/dual-boot/</guid>
-      <description>因作者的電腦 HDMI 電視時，Windows 顯示卡驅動程式卻無法取得最佳更新。Arch Linux 顯示卡驅動程式讓作者驚艷，大嘆好美的畫質！於是安裝雙系統。 建</description>
+      <guid>https://diy99.github.io/papermod/posts/archlinux-base-install/</guid>
+      <description>上圖，bash 執行過程 简体中文参阅 [bash]基础安装 作者的 bash 檔 install.txt 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37</description>
     </item>
     
     <item>
@@ -49,15 +49,6 @@
     </item>
     
     <item>
-      <title>[bash] Arch Linux Base Install - 基礎安裝</title>
-      <link>https://diy99.github.io/papermod/posts/archlinux-base-install/</link>
-      <pubDate>Sun, 12 Nov 2023 06:30:39 +0800</pubDate>
-      
-      <guid>https://diy99.github.io/papermod/posts/archlinux-base-install/</guid>
-      <description>上圖，bash 執行過程 简体中文参阅 [bash]基础安装 作者的 bash 檔 install.txt 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37</description>
-    </item>
-    
-    <item>
       <title>Arch Linux Xfce 安裝&#43;SDDM自動登入&#43;Fcitx5輸入法</title>
       <link>https://diy99.github.io/papermod/posts/xfce/</link>
       <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
@@ -73,6 +64,15 @@
       
       <guid>https://diy99.github.io/papermod/posts/lxqt/</guid>
       <description>先完成 Arch Linux Base Install - 基礎安裝 官網LXQt，作者 bash 檔 lxqt.txt 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46</description>
+    </item>
+    
+    <item>
+      <title>Windows 與 Arch Linux 雙系統</title>
+      <link>https://diy99.github.io/papermod/posts/dual-boot/</link>
+      <pubDate>Wed, 11 Jan 2023 17:48:01 +0800</pubDate>
+      
+      <guid>https://diy99.github.io/papermod/posts/dual-boot/</guid>
+      <description>因作者的電腦 HDMI 電視時，Windows 顯示卡驅動程式卻無法取得最佳更新。Arch Linux 顯示卡驅動程式讓作者驚艷，大嘆好美的畫質！於是安裝雙系統。 建</description>
     </item>
     
     <item>
